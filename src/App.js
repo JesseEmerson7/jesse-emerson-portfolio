@@ -1,7 +1,16 @@
-import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Header from "./components/header";
+import Footer from "./components/footer"
+import Body from "./components/body/body";
 
 function App() {
-  return <h1>Hello Portfolio :)</h1>;
+  return (
+    <>
+      <Header />
+      <Body />
+      <Footer/>
+    </>
+  );
 }
 
 export default App;

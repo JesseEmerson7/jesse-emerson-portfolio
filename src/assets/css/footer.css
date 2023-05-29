@@ -1,0 +1,10 @@
+footer p{
+    margin: auto;
+}
+
+footer{
+    background-image: url("../images/header-pic4.jpg"), linear-gradient(to right, #0b80e7, #065294);
+  background-size: cover;
+  color: antiquewhite;
+ 
+}
