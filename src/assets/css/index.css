@@ -1,4 +1,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    background-image: url('../images/wave_background.jpg');
+    min-height: 100vh;
 }
+

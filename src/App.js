@@ -5,6 +5,7 @@ import About from "./components/body/aboutMe"
 import Contact from "./components/body/Contact"
 import Portfolio from "./components/body/Portfolio"
 import Resume from "./components/body/Resume"
+
 import {useState} from "react"
 
 function App() {
