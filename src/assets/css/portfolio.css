@@ -1,0 +1,29 @@
+#port-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/wave_background.jpg') ;
+ background-size: cover;
+
+}
+
+.port-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10%;
+    margin: 2%;
+}
+
+.project-card{
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px black;
+}
+
+#burger-builder{
+    background-image: url(../images/afternoon-peak-41409.herokuapp.com_\ \(1\).png);
+}
+
+
+
+

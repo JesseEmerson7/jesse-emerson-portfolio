@@ -1,9 +1,60 @@
 #profile-pic{
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 15px black;
+    border: 2px solid rgb(14, 134, 214) ;
 }
 
-h1{
-    
+#pic-name{
+    margin-top: 5%;
+    color: black;
+    font-size: 30px;
+}
+#about-me{
+ background-image: url('../images/wave_background.jpg') ;
+ background-size: cover;
+}
+
+#pic-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    align-items: center;
+}
+
+#picture-text{
+    padding: 5px;
+    font-size: 16px;
+    border-width: 1px;
+    border-color: #000000;
+    background-color: #143f7c;
+    color: #eef3f7;
+    border-style: solid;
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+    margin-top: 10px;
+}
+
+#bio{
+    display: flex;
+    justify-content: center;
+}
+
+#bio-card{
+    width: 80%;
+    height: 60%;
+    margin-top: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 2px;
+    border-color:rgb(14, 134, 214);
+    background-color: #143f7c;
+    color: #eef3f7;
+    border-style: solid;
+    border-radius: 9px;
+    box-shadow: 3px 3px 8px rgba(66,66,66,.75);
+    text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+
 }
