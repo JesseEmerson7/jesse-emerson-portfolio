@@ -1,6 +1,6 @@
 import "../../assets/css/aboutMe.css";
 
-import profile from "../../assets/images/profile-2.jpg";
+import profile from "../../assets/images/profile-pic3.jpg";
 
 export default function About() {
   return (

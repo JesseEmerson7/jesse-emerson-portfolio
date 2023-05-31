@@ -17,8 +17,6 @@
 }
 
 #pic-container{
-    display: flex;
-    flex-direction: column;
     margin-top: 3%;
     align-items: center;
 }
