@@ -10,7 +10,8 @@
 }
 
 .card-size{
-    height: 400px;
+    height: 100%;
+    box-shadow: -2px 5px 12px rgb(11, 97, 202);
 }
 
 button{
@@ -20,6 +21,7 @@ button{
 
 img{
     border-radius: 10px;
+    height: 180px;
 }
 
 .project-bg{
@@ -27,8 +29,13 @@ img{
     color: antiquewhite;
 }
 
-/* .project-detail{
-    display: flex;
-    flex-direction: column;
-} */
+.site-info{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    background-color: rgba(47, 151, 243, 0.664);
+    padding: 1px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+}
 
