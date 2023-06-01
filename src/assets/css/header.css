@@ -7,11 +7,22 @@
 }
 
 #navbar ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     text-decoration: none;
     border: 2px solid #065294;
-    background-color: rgba(62, 238, 238, 0.219);
-    
+    background-color: rgba(62, 238, 238, 0.219); 
+    border-radius: 2px;
+}
+
+#navbar ul li:hover{
+    cursor: pointer;
+}
+
+p{
+    margin-bottom: 0;
 }
 
 a{
@@ -28,4 +39,9 @@ a{
     background-image: url("../images/header-pic4.jpg"), linear-gradient(to right, #0b80e7, #065294);
   background-size: cover;
   color: antiquewhite;
+}
+
+.selected-tab{
+   font-size: 20px;
+   box-shadow: 0px 0px 10px blue;
 }
