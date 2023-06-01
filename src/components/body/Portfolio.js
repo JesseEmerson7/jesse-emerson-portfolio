@@ -9,9 +9,9 @@ import pass from "../../assets/images/password.png";
 export default function Portfolio() {
   return (
     <>
-      <div className=" col ">
-        <div className="row justify-content-center m-4 gap-4">
-          <div className="card card-size w-25 h-100 col-4  project-bg">
+      <div id="container-div" className=" col ">
+        <div id="row-div" className="row  m-4 gap-4">
+          <div id="first-card" className="card card-size w-25  col-4 col-sm-12 project-bg">
             <img src={picture} alt="Burger Builder website" />
             <div className="project-detail">
               <h2>Burger Builder</h2>
@@ -38,7 +38,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="card card-size w-25 h-100 col-4  project-bg">
+          <div className="card card-size w-25  col-4  project-bg col-sm-12">
             <img src={weatherApp} alt="Burger Builder website" />
             <div className="project-detail">
               <h2>Weather Forecast</h2>
@@ -65,7 +65,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="card card-size w-25 h-100 col-4  project-bg">
+          <div className="card card-size w-25  col-4  project-bg col-sm-12">
             <img src={bite} alt="Burger Builder website" />
             <div className="project-detail">
               <h2>Bite Bud</h2>
@@ -93,8 +93,8 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="row justify-content-center m-4 gap-4">
-          <div className="card card-size w-25 h-100 col-4  project-bg">
+        <div id="row-div2" className="row justify-content-center m-4 gap-4">
+          <div className="card card-size w-25  col-4  project-bg">
             <img src={back} alt="Burger Builder website" />
             <div className="project-detail">
               <h2>MongoDb Social Network</h2>
@@ -114,7 +114,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="card card-size w-25 h-100 col-4  project-bg">
+          <div className="card card-size w-25  col-4  project-bg">
             <img src={test} alt="Burger Builder website" />
             <div className="project-detail">
               <h2>Quiz Time</h2>
@@ -141,7 +141,7 @@ export default function Portfolio() {
             </div>
           </div>
 
-          <div className="card card-size w-25 h-100 col-4  project-bg">
+          <div className="card card-size w-25  col-4  project-bg">
             <img src={pass} alt="Burger Builder website" />
             <div className="project-detail">
               <h2>Password Generator</h2>

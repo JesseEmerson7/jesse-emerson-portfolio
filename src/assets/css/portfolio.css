@@ -1,16 +1,11 @@
 
-.project-card{
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 2px 1px 10px black;
+#row-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-
-#burger-builder{
-    background-image: url(../images/afternoon-peak-41409.herokuapp.com_\ \(1\).png);
-}
-
 .card-size{
-    height: 600px;
+    height: 25%;
     box-shadow: -2px 5px 12px rgb(11, 97, 202);
 }
 
@@ -43,3 +38,29 @@ h2{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 1200px){
+    #row-div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #row-div2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-size{
+        width: 600px;
+    }
+
+    #container-div{
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+    #first-card{
+        width: 75%;
+    }
+
+
+}
