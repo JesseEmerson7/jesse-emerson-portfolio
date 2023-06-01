@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <div id="about-me" className="container-fluid">
-        <div className="row col-sm-12 vh-100">
+        <div className="row col-sm-12">
           <div
             id="pic-container"
             className="col-md-4 col-lg-4 col-sm-12 text-center"
@@ -26,7 +26,7 @@ export default function About() {
               <div className="card-body">
                 <h5 className="card-title">Bio</h5>
                 <p className="card-text">
-                   
+                I'm Jesse, a certified full stack web developer from the UCF Coding Bootcamp. Proficient in front-end technologies like HTML, CSS, and JavaScript, I create visually appealing and responsive user interfaces. With expertise in frameworks like React.js, I build dynamic and interactive web applications. On the back-end, I utilize Node.js and Express.js to develop robust server-side applications, implementing RESTful APIs for data management. I excel at problem-solving and pay attention to detail, striving for efficient and scalable code. Collaboration is my strength, and I'm excited to contribute to cutting-edge projects while continually enhancing my web development skills.
                 </p>
               </div>
             </div>
