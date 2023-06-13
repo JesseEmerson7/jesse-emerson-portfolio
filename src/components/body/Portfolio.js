@@ -5,31 +5,35 @@ import bite from "../../assets/images/bite-bud.png";
 import back from "../../assets/images/backend.png";
 import test from "../../assets/images/test.png";
 import pass from "../../assets/images/password.png";
+import BeeAware from "../../assets/images/BeeAware.png";
 
 export default function Portfolio() {
   return (
     <>
       <div id="container-div" className=" col ">
         <div id="row-div" className="row  m-4 gap-4">
-          <div id="first-card" className="card card-size w-25  col-4 col-sm-12 project-bg">
-            <img src={picture} alt="Burger Builder website" />
+          <div
+            id="first-card"
+            className="card card-size w-25  col-4 col-sm-12 project-bg"
+          >
+            <img src={BeeAware} alt="bee aware profile page" />
             <div className="project-detail">
-              <h2>Burger Builder</h2>
+              <h2>BeeAware</h2>
               <p className="site-info">
-                Full stack application built using: Node, Express, MySQL,
-                Sequelize, and Handlebars.
+                Full stack application built using: Mongodb, Express, React,
+                Node, and Apollo-Server.
               </p>
               <div className="d-flex flex-row justify-content-between flex-wrap">
                 <a
                   className="btn project-bg"
-                  href="https://afternoon-peak-41409.herokuapp.com/"
+                  href="https://radiant-ocean-19328.herokuapp.com/"
                   target="_blank"
                 >
                   View Live Site
                 </a>
                 <a
                   className="btn project-bg"
-                  href="https://github.com/APereyro/BurgerBuilder"
+                  href="https://github.com/JesseEmerson7/BeeAware"
                   target="_blank"
                 >
                   View Repository
@@ -114,6 +118,35 @@ export default function Portfolio() {
             </div>
           </div>
 
+          <div
+            id="first-card"
+            className="card card-size w-25  col-4 col-sm-12 project-bg"
+          >
+            <img src={picture} alt="Burger Builder website" />
+            <div className="project-detail">
+              <h2>Burger Builder</h2>
+              <p className="site-info">
+                Full stack application built using: Node, Express, MySQL,
+                Sequelize, and Handlebars.
+              </p>
+              <div className="d-flex flex-row justify-content-between flex-wrap">
+                <a
+                  className="btn project-bg"
+                  href="https://afternoon-peak-41409.herokuapp.com/"
+                  target="_blank"
+                >
+                  View Live Site
+                </a>
+                <a
+                  className="btn project-bg"
+                  href="https://github.com/APereyro/BurgerBuilder"
+                  target="_blank"
+                >
+                  View Repository
+                </a>
+              </div>
+            </div>
+          </div>
           <div className="card card-size w-25  col-4  project-bg">
             <img src={test} alt="Burger Builder website" />
             <div className="project-detail">
@@ -133,32 +166,6 @@ export default function Portfolio() {
                 <a
                   className="btn project-bg"
                   href="https://github.com/JesseEmerson7/quiz-time"
-                  target="_blank"
-                >
-                  View Repository
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="card card-size w-25  col-4  project-bg">
-            <img src={pass} alt="Burger Builder website" />
-            <div className="project-detail">
-              <h2>Password Generator</h2>
-              <p className="site-info">
-                Front end application built using: HTML, CSS, and JavaScript.
-              </p>
-              <div className="d-flex flex-row justify-content-between flex-wrap">
-                <a
-                  className="btn project-bg"
-                  href="https://jesseemerson7.github.io/password-gen/"
-                  target="_blank"
-                >
-                  View Live Site
-                </a>
-                <a
-                  className="btn project-bg"
-                  href="https://github.com/JesseEmerson7/password-gen"
                   target="_blank"
                 >
                   View Repository
