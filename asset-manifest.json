@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/jesse-emerson-portfolio/static/css/main.5dcacbf2.css",
-    "main.js": "/jesse-emerson-portfolio/static/js/main.e3ca3167.js",
+    "main.js": "/jesse-emerson-portfolio/static/js/main.5ff2d056.js",
     "static/media/bite-bud.png": "/jesse-emerson-portfolio/static/media/bite-bud.e136372ff7aad397603e.png",
     "static/media/weather-app.png": "/jesse-emerson-portfolio/static/media/weather-app.daa47d6b6ffe61cb0e21.png",
+    "static/media/BeeAware.png": "/jesse-emerson-portfolio/static/media/BeeAware.feb86a54ab01345c5cb9.png",
     "static/media/profile-pic3.jpg": "/jesse-emerson-portfolio/static/media/profile-pic3.e2f2d9f24ae53674f9f2.jpg",
     "static/media/backend.png": "/jesse-emerson-portfolio/static/media/backend.109ef78d65acfe90a732.png",
     "static/media/afternoon-peak-41409.herokuapp.com_ (1).png": "/jesse-emerson-portfolio/static/media/afternoon-peak-41409.herokuapp.com_ (1).ef63be3ecaad1a58d942.png",
@@ -13,10 +14,10 @@
     "static/media/password.png": "/jesse-emerson-portfolio/static/media/password.aa25cbf89939def02f6b.png",
     "index.html": "/jesse-emerson-portfolio/index.html",
     "main.5dcacbf2.css.map": "/jesse-emerson-portfolio/static/css/main.5dcacbf2.css.map",
-    "main.e3ca3167.js.map": "/jesse-emerson-portfolio/static/js/main.e3ca3167.js.map"
+    "main.5ff2d056.js.map": "/jesse-emerson-portfolio/static/js/main.5ff2d056.js.map"
   },
   "entrypoints": [
     "static/css/main.5dcacbf2.css",
-    "static/js/main.e3ca3167.js"
+    "static/js/main.5ff2d056.js"
   ]
 }
