@@ -6,8 +6,10 @@ import profile2 from "../../assets/images/profile-4.jpg";
 import profile3 from "../../assets/images/profile-2.jpg";
 import { useState, useEffect } from "react";
 
+
 export default function About() {
   const [currentPic, ChangePic] = useState(0);
+  const [skillButton, changeSkill] = useState(false);
 
   const pictureList = [profile, profile2, profile3];
 
@@ -18,6 +20,10 @@ export default function About() {
 
     return () => clearInterval(interval);
   }, [pictureList.length]);
+
+  const toggleSkill = ()=>{
+    changeSkill(!skillButton);
+  }
 
   return (
     <>
@@ -68,10 +74,20 @@ export default function About() {
         </section>
         {/* skills section */}
         <section className="flex flex-col flex-wrap my-10">
-          <div className=" w-3/4 mx-auto">
-            <h1 className="pl-10">Technical Skills</h1>
-            <marquee>hello here are some of my skills</marquee>
+          {/* daisy button start */}
+          <div id="skill-scroll" className={skillButton?"collapse bg-base-200 text-amber-200 ":"collapse bg-base-200 "} onClick={toggleSkill}>
+            <input type="checkbox" />
+            <div className="collapse-title text-xl font-medium text-center">
+              {skillButton?"Skills":"Click to show skill list"}
+            </div>
+            <div className="collapse-content">
+              <marquee id="scroll-text">
+              JavaScript ES6+,  CSS3,  HTML5,  SQL,  NoSQL,  GitHub,  MongoDB,  Mongoose,  MySQL,  Sequelize,  Express,  React,  Node,  Handlebars,  jQuery,  Bootstrap,  Tailwind CSS
+
+              </marquee>
+            </div>
           </div>
+          {/* end */}
         </section>
       </div>
     </>
