@@ -23,7 +23,15 @@ export default function About() {
 
   const toggleSkill = ()=>{
     changeSkill(!skillButton);
+    const container = document.getElementById('skill-scroll');
+    container.scrollIntoView({ behavior: "smooth", block: "center" });
   }
+
+  
+
+  
+
+
 
   return (
     <>
@@ -75,7 +83,7 @@ export default function About() {
         {/* skills section */}
         <section className="flex flex-col flex-wrap my-10">
           {/* daisy button start */}
-          <div id="skill-scroll" className={skillButton?"collapse bg-base-200 text-amber-200 ":"collapse bg-base-200 "} onClick={toggleSkill}>
+          <div id="skill-scroll" className={skillButton?"collapse bg-base-200 text-amber-200 ":"collapse bg-base-200 "} onClick={toggleSkill}  >
             <input type="checkbox" />
             <div className="collapse-title text-xl font-medium text-center">
               {skillButton?"Skills":"Click to show skill list"}
