@@ -1,19 +1,56 @@
 import "../assets/css/header.css";
 
-export default function header({currentPage, handlePageChange}) {
+export default function header({ currentPage, handlePageChange }) {
   return (
-    <nav id="header" className="navbar row">
-      <div id="my-name" className="col-sm-12 col-md  text-md-start text-sm-center">
-        <h1>Jesse Emerson</h1>
-        <p id="title-info" className="ps-md-4 text-md-start text-sm-center">Full Stack Developer</p>
+    <nav id="header" className="w-full flex-col flex flex-wrap md:flex-row">
+      <div id="my-name" className="w-full my-5 md:w-1/3 rounded-sm">
+        <h1 className=" text-5xl text-center w-full">Jesse Emerson</h1>
+        <p id="title-info" className="w-full text-center">
+          Full Stack Developer
+        </p>
       </div>
-      <div id="navbar" className="col-sm-12 col-md-7 ">
-        <ul className="row">
-          <li className={currentPage === 'about'? 'col-lg-3 selected-tab col-md-2': 'col-lg-2 col-md-2'} onClick={() => handlePageChange('about')}><p>About</p></li>
-          <li className={currentPage === 'portfolio'? 'col-lg-3 selected-tab col-md-2': 'col-lg-2 col-md-2'} onClick={() => handlePageChange('portfolio')}><p>Portfolio</p></li>
-          <li className={currentPage === 'contact'? 'col-lg-3 selected-tab col-md-2': 'col-lg-2 col-md-2'} onClick={() => handlePageChange('contact')}><p>Contact</p></li>
-          <li className={currentPage === 'resume'? 'col-lg-3 selected-tab col-md-2': 'col-lg-2 col-md-2'} onClick={() => handlePageChange('resume')}><p>Resume</p></li>
-          
+      <div id="navbar" className="w-full md:w-2/3">
+        <ul className=" flex flex-col w-5/6 mb-2 mx-auto md:flex-row md:4/6 md:mt-[5%]">
+          <li
+            className={
+              currentPage === "about"
+                ? "selected-tab md:w-2/6"
+                : "md:w-1/4"
+            }
+            onClick={() => handlePageChange("about")}
+          >
+            <p>About</p>
+          </li>
+          <li
+            className={
+              currentPage === "portfolio"
+                ? "selected-tab md:w-2/6"
+                : 'md:w-1/4'
+            }
+            onClick={() => handlePageChange("portfolio")}
+          >
+            <p>Portfolio</p>
+          </li>
+          <li
+            className={
+              currentPage === "contact"
+                ? "selected-tab md:w-2/6 "
+                : "md:w-1/4"
+            }
+            onClick={() => handlePageChange("contact")}
+          >
+            <p>Contact</p>
+          </li>
+          <li
+            className={
+              currentPage === "resume"
+                ? "selected-tab md:w-2/6"
+                : "md:w-1/4"
+            }
+            onClick={() => handlePageChange("resume")}
+          >
+            <p>Resume</p>
+          </li>
         </ul>
       </div>
     </nav>

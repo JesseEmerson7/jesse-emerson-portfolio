@@ -1,4 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import About from "./components/body/aboutMe";
@@ -28,7 +27,7 @@ function App() {
 
   return (
     <>
-    <div className="min-vh-100">
+    <div className=" min-h-screen">
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>

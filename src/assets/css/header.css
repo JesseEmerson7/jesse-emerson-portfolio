@@ -2,18 +2,18 @@
     list-style-type: none;
     padding: 0;
     text-decoration: none;
-    justify-content: center;
     gap: 10px;
 }
 
+#my-name{
+    background-color: #1e539eb1;
+}
+
 #navbar ul li{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     text-decoration: none;
     border: 2px solid #065294;
-    background-color: rgba(62, 238, 238, 0.219); 
+    background-color: rgba(62, 238, 238, 0.388); 
     border-radius: 2px;
 }
 
@@ -30,10 +30,6 @@ a{
     color: aliceblue;
 }
 
-
-#my-name{
-    padding-left: 100px;
-}
 
 #header{
     background-image: url("../images/header-pic4.jpg"), linear-gradient(to right, #0b80e7, #065294);
