@@ -62,8 +62,7 @@ export default function About() {
           >
             <div id="bio-card" className="">
               <div className="">
-                <h5 className="text-xl mb-2">Bio</h5>
-                <p className="text-xl pb-5 text-center">
+                <p className="text-xl py-5 text-center">
                   I am a full stack web developer certified by the University of
                   Central Florida Coding Bootcamp Program. I am proficient in
                   front-end technologies such as: HTML, CSS, and JavaScript.
