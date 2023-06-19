@@ -3,7 +3,6 @@ import "../../assets/css/aboutMe.css";
 import profile from "../../assets/images/profile-pic3.jpg";
 import profile2 from "../../assets/images/profile-4.jpg";
 //replace this pic below
-import profile3 from "../../assets/images/profile-2.jpg";
 import { useState, useEffect } from "react";
 
 
@@ -11,7 +10,7 @@ export default function About() {
   const [currentPic, ChangePic] = useState(0);
   const [skillButton, changeSkill] = useState(false);
 
-  const pictureList = [profile, profile2, profile3];
+  const pictureList = [profile, profile2];
 
   useEffect(() => {
     const interval = setInterval(() => {

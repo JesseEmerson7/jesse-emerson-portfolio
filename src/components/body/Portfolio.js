@@ -10,7 +10,7 @@ import BeeAware from "../../assets/images/BeeAware.png";
 export default function Portfolio() {
   const projects = [
     {
-      id: 1,
+      id: 0,
       name: "BeeAware",
       desc: "Full stack web application designed to inform users about Florida local pollinators and their importance. Users can view an information page and learn about various local bees, and post on the websites blog page for all to view.",
       tech: "MongoDB, Express, React, Node, Mongoose, React-Router, Tailwind CSS, GraphQL, Apollo",
@@ -25,7 +25,7 @@ export default function Portfolio() {
   <div className="card-body p-3 md:p-7">
     <h2 className="card-title text-2xl">{item.name}</h2>
     <p>{item.desc}</p>
-    <h2 className=" font-medium text-lg text-white">Technologies Used:</h2>
+    <h2 className=" font-medium text-lg text-white">Technologies used:</h2>
     <p>{item.tech}</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary">View application</button>
