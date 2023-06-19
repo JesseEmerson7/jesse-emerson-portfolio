@@ -16,6 +16,8 @@ export default function Portfolio() {
       tech: "MongoDB, Express, React, Node, Mongoose, React-Router, Tailwind CSS, GraphQL, Apollo",
       contrib: "",
       image: BeeAware,
+      webPage: "https://radiant-ocean-19328.herokuapp.com/",
+      gitHub:"https://github.com/JesseEmerson7/BeeAware"
     },
   ];
 
@@ -27,8 +29,9 @@ export default function Portfolio() {
     <p>{item.desc}</p>
     <h2 className=" font-medium text-lg text-white">Technologies used:</h2>
     <p>{item.tech}</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">View application</button>
+    <div className="card-actions justify-center">
+      <a className="btn btn-primary" href={ item.gitHub } target="_blank">View code</a>
+      <a className="btn btn-primary" href={ item.webPage } target="_blank">View application</a>
     </div>
   </div>
 </div>)
