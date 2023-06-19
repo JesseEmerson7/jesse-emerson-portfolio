@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/jesse-emerson-portfolio/static/css/main.1284b99d.css",
-    "main.js": "/jesse-emerson-portfolio/static/js/main.eeb6c709.js",
-    "static/media/profile-2.jpg": "/jesse-emerson-portfolio/static/media/profile-2.813cfbfaa762bd89eb3b.jpg",
+    "main.js": "/jesse-emerson-portfolio/static/js/main.4d352f5f.js",
     "static/media/bite-bud.png": "/jesse-emerson-portfolio/static/media/bite-bud.e136372ff7aad397603e.png",
     "static/media/weather-app.png": "/jesse-emerson-portfolio/static/media/weather-app.daa47d6b6ffe61cb0e21.png",
     "static/media/BeeAware.png": "/jesse-emerson-portfolio/static/media/BeeAware.feb86a54ab01345c5cb9.png",
@@ -16,10 +15,10 @@
     "static/media/password.png": "/jesse-emerson-portfolio/static/media/password.aa25cbf89939def02f6b.png",
     "index.html": "/jesse-emerson-portfolio/index.html",
     "main.1284b99d.css.map": "/jesse-emerson-portfolio/static/css/main.1284b99d.css.map",
-    "main.eeb6c709.js.map": "/jesse-emerson-portfolio/static/js/main.eeb6c709.js.map"
+    "main.4d352f5f.js.map": "/jesse-emerson-portfolio/static/js/main.4d352f5f.js.map"
   },
   "entrypoints": [
     "static/css/main.1284b99d.css",
-    "static/js/main.eeb6c709.js"
+    "static/js/main.4d352f5f.js"
   ]
 }
