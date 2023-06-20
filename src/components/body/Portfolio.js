@@ -47,8 +47,8 @@ export default function Portfolio() {
       tech: "CSS, HTML, JavaScript, Restaurant API, Youtube API",
       contrib: "",
       image: bite,
-      webPage: "https://jesseemerson7.github.io/Weather-forecast/",
-      gitHub: "https://github.com/JesseEmerson7/Weather-forecast",
+      webPage: "https://suzakijun1.github.io/BiteBud/",
+      gitHub: "https://github.com/Suzakijun1/BiteBud",
     },
     {
       id: 4,
@@ -59,6 +59,16 @@ export default function Portfolio() {
       image: test,
       webPage: "https://jesseemerson7.github.io/quiz-time/",
       gitHub: "https://github.com/JesseEmerson7/quiz-time",
+    },
+    {
+      id: 5,
+      name: "Password Generator ",
+      desc: "Front end web application that generates a random secure password.",
+      tech: "CSS, HTML, JavaScript",
+      contrib: "",
+      image: pass,
+      webPage: "https://jesseemerson7.github.io/password-gen/",
+      gitHub: "https://github.com/JesseEmerson7/password-gen",
     },
   ];
 
@@ -83,10 +93,10 @@ export default function Portfolio() {
           </h2>
           <p>{item.tech}</p>
           <div className="card-actions justify-center">
-            <a className="btn btn-primary" href={item.gitHub} target="_blank">
+            <a className="btn btn-primary port-btn" href={item.gitHub} target="_blank">
               View code
             </a>
-            <a className="btn btn-primary" href={item.webPage} target="_blank">
+            <a className="btn btn-primary port-btn" href={item.webPage} target="_blank">
               View application
             </a>
           </div>
