@@ -1,12 +1,18 @@
-#form-container-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    
-}
+#hero-image {
+    background-image: linear-gradient(rgba(16, 84, 139, 0.726), rgba(0, 0, 0, 0.226)), url("../images/jax.jpg");
 
-#submit-btn{
-    width: 100px;
-}
+    /* Set a specific height */
+    
+    height: 165px;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text{
+    background-color: rgba(62, 238, 238, 0.388); 
+    
+  }
+  
