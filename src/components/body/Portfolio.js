@@ -17,32 +17,65 @@ export default function Portfolio() {
       contrib: "",
       image: BeeAware,
       webPage: "https://radiant-ocean-19328.herokuapp.com/",
-      gitHub:"https://github.com/JesseEmerson7/BeeAware"
+      gitHub: "https://github.com/JesseEmerson7/BeeAware",
+    },
+   
+    {
+      id: 1,
+      name: "Burger Builder",
+      desc: "Full stack web application that allows users to view, save, and create burger recipes and share them with others.",
+      tech: "CSS, HTML, JavaScript, Node.js, MySQL, Sequelize.js,  Express.js, Handlebars.js, GitHub, Tailwind",
+      contrib: "",
+      image: picture,
+      webpage: "https://afternoon-peak-41409.herokuapp.com/",
+      github: "https://github.com/APereyro/BurgerBuilder",
+    },
+    {
+      id: 2,
+      name: "Weather Forecast",
+      desc: "Front end web application that allows users to search any city by name and receive a 6 day weather forecast.",
+      tech: "CSS, HTML, JavaScript, Open Weather API",
+      contrib: "",
+      image: weatherApp,
+      webpage: "https://jesseemerson7.github.io/Weather-forecast/",
+      github: "https://github.com/JesseEmerson7/Weather-forecast",
     },
   ];
 
-  const projectCards = projects.map(( item )=>{
-    return(<div className="flex flex-col md:flex-row w-5/6 cardBg mx-auto rounded-lg" key={item.id}>
-  <figure><img src={item.image} alt="web application screenshot"/></figure>
-  <div className="card-body p-3 md:p-7">
-    <h2 className="card-title text-2xl">{item.name}</h2>
-    <p>{item.desc}</p>
-    <h2 className=" font-medium text-lg text-white">Technologies used:</h2>
-    <p>{item.tech}</p>
-    <div className="card-actions justify-center">
-      <a className="btn btn-primary" href={ item.gitHub } target="_blank">View code</a>
-      <a className="btn btn-primary" href={ item.webPage } target="_blank">View application</a>
-    </div>
-  </div>
-</div>)
-  })
+  const projectCards = projects.map((item) => {
+    return (
+      <div
+        className="flex flex-col md:flex-row w-5/6 cardBg mx-auto rounded-lg"
+        key={item.id}
+      >
+        <figure>
+          <img src={item.image} alt="web application screenshot" />
+        </figure>
+        <div className="card-body p-3 md:p-7">
+          <h2 className="card-title text-2xl">{item.name}</h2>
+          <p>{item.desc}</p>
+          <h2 className=" font-medium text-lg text-white">
+            Technologies used:
+          </h2>
+          <p>{item.tech}</p>
+          <div className="card-actions justify-center">
+            <a className="btn btn-primary" href={item.gitHub} target="_blank">
+              View code
+            </a>
+            <a className="btn btn-primary" href={item.webPage} target="_blank">
+              View application
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  });
 
   return (
     <>
       <section className="flex flex-col w-full flex-wrap mt-5 text-white">
         {projectCards}
       </section>
-      
     </>
   );
 }
