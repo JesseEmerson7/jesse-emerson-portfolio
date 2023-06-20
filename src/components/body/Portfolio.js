@@ -19,7 +19,7 @@ export default function Portfolio() {
       webPage: "https://radiant-ocean-19328.herokuapp.com/",
       gitHub: "https://github.com/JesseEmerson7/BeeAware",
     },
-   
+
     {
       id: 1,
       name: "Burger Builder",
@@ -27,8 +27,8 @@ export default function Portfolio() {
       tech: "CSS, HTML, JavaScript, Node.js, MySQL, Sequelize.js,  Express.js, Handlebars.js, GitHub, Tailwind",
       contrib: "",
       image: picture,
-      webpage: "https://afternoon-peak-41409.herokuapp.com/",
-      github: "https://github.com/APereyro/BurgerBuilder",
+      webPage: "https://afternoon-peak-41409.herokuapp.com/",
+      gitHub: "https://github.com/APereyro/BurgerBuilder",
     },
     {
       id: 2,
@@ -37,21 +37,45 @@ export default function Portfolio() {
       tech: "CSS, HTML, JavaScript, Open Weather API",
       contrib: "",
       image: weatherApp,
-      webpage: "https://jesseemerson7.github.io/Weather-forecast/",
-      github: "https://github.com/JesseEmerson7/Weather-forecast",
+      webPage: "https://jesseemerson7.github.io/Weather-forecast/",
+      gitHub: "https://github.com/JesseEmerson7/Weather-forecast",
+    },
+    {
+      id: 3,
+      name: "Bite Bud",
+      desc: "Front end web application that allows users to search any city by name and receive a list of places to eat along with videos of things to do in that city.",
+      tech: "CSS, HTML, JavaScript, Restaurant API, Youtube API",
+      contrib: "",
+      image: bite,
+      webPage: "https://jesseemerson7.github.io/Weather-forecast/",
+      gitHub: "https://github.com/JesseEmerson7/Weather-forecast",
+    },
+    {
+      id: 4,
+      name: "Quiz Time",
+      desc: "Front end web application that tests the user's JavaScript knowledge.",
+      tech: "CSS, HTML, JavaScript",
+      contrib: "",
+      image: test,
+      webPage: "https://jesseemerson7.github.io/quiz-time/",
+      gitHub: "https://github.com/JesseEmerson7/quiz-time",
     },
   ];
 
   const projectCards = projects.map((item) => {
     return (
       <div
-        className="flex flex-col md:flex-row w-5/6 cardBg mx-auto rounded-lg"
+        className="flex flex-col md:flex-row md:w-5/6 cardBg mx-auto rounded-lg w-[95%]"
         key={item.id}
       >
-        <figure>
-          <img src={item.image} alt="web application screenshot" />
+        <figure className="flex justify-center items-center md:w-4/6">
+          <img
+            className=" md:h-96 w-full rounded-lg"
+            src={item.image}
+            alt="web application screenshot"
+          />
         </figure>
-        <div className="card-body p-3 md:p-7">
+        <div className="card-body p-3 md:p-7 md:w-1/2">
           <h2 className="card-title text-2xl">{item.name}</h2>
           <p>{item.desc}</p>
           <h2 className=" font-medium text-lg text-white">
@@ -73,7 +97,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className="flex flex-col w-full flex-wrap mt-5 text-white">
+      <section className="flex flex-col w-full flex-wrap mt-5 text-white gap-5">
         {projectCards}
       </section>
     </>
