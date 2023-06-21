@@ -71,6 +71,16 @@ export default function Portfolio() {
       webPage: "https://jesseemerson7.github.io/password-gen/",
       gitHub: "https://github.com/JesseEmerson7/password-gen",
     },
+    {
+      id: 6,
+      name: "MongoDB Social Network ",
+      desc: "Back end social network RESTful web API",
+      tech: "JavaScript, MongoDb, Mongoose, Express, Node",
+      contrib: "",
+      image: back,
+      webPage: "",
+      gitHub: "https://github.com/JesseEmerson7/mongo-social-network",
+    },
   ];
 
   const projectCards = projects.map((item) => {
@@ -103,13 +113,13 @@ export default function Portfolio() {
             >
               View code
             </a>
-            <a
+            {item.webPage != ''? <a
               className="btn btn-primary port-btn"
               href={item.webPage}
               target="_blank"
             >
               View application
-            </a>
+            </a>:''}
           </div>
         </div>
       </div>
