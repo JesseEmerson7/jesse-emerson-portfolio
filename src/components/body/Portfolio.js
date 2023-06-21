@@ -7,6 +7,7 @@ import test from "../../assets/images/test.png";
 import pass from "../../assets/images/password.png";
 import BeeAware from "../../assets/images/BeeAware.png";
 
+
 export default function Portfolio() {
   const projects = [
     {
@@ -75,7 +76,7 @@ export default function Portfolio() {
   const projectCards = projects.map((item) => {
     return (
       <div
-        className="flex flex-col md:flex-row md:w-5/6 cardBg mx-auto rounded-lg w-[95%]"
+        className=" flex flex-col md:flex-row md:w-5/6 cardBg mx-auto rounded-lg w-[95%]" data-aos="fade-left" data-aos-duration="1000"
         key={item.id}
       >
         <figure className="flex justify-center items-center md:w-4/6">

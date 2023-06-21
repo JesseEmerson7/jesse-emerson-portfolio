@@ -1,11 +1,12 @@
 import "../assets/css/header.css";
+import 'animate.css';
 
 export default function header({ currentPage, handlePageChange }) {
   return (
     <nav id="header" className="w-full flex-col flex flex-wrap md:flex-row">
       <div id="my-name" className="w-full my-5 md:w-1/3 rounded-sm">
         <h1 className=" text-5xl text-center w-full">Jesse Emerson</h1>
-        <p id="title-info" className="w-full text-center">
+        <p id="title-info" className="w-full text-center animate__animated animate__fadeIn">
           Full Stack Developer
         </p>
       </div>
