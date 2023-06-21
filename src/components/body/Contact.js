@@ -1,14 +1,16 @@
 import "../../assets/css/contact.css";
-import 'animate.css';
+import "animate.css";
 
 export default function Contact() {
   //handle link clicks for chat bubbles
   const handleLink = (name) => {
-    name == "email" ? window.open("mailto:jesseemerson7@gmail.com") : window.open("tel:4076872391");
+    name == "email"
+      ? window.open("mailto:jesseemerson7@gmail.com")
+      : window.open("tel:4076872391");
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full md:mb-20">
       {/* hero img */}
       <div id="hero-image" className="flex justify-start">
         <h1 className="text-2xl font-semibold mt-10 ml-5 hero-text h-min p-2 md:p-4 rounded-xl text-white ">
@@ -24,16 +26,14 @@ export default function Contact() {
         </div>
         <div className="chat chat-end w-full">
           <div className="animate__animated animate__fadeIn  chat-bubble text-white bg-green-600 md:p-5 text-xl shadow-md shadow-black">
-            email address?
+            Email address?
           </div>
         </div>
         <div
           className="chat chat-start w-full  hover:cursor-pointer"
           onClick={() => handleLink("email")}
         >
-          <div
-            className="animate__animated animate__fadeIn animate__delay-1s  chat-bubble bg-blue-600 text-white md:p-5 text-xl shadow-md shadow-black hover:bg-cyan-200 hover:text-stone-950 hover:shadow-lg hover:shadow-sky-500"
-          >
+          <div className="animate__animated animate__fadeIn animate__delay-1s  chat-bubble bg-blue-600 text-white md:p-5 text-xl shadow-md shadow-black hover:bg-cyan-200 hover:text-stone-950 hover:shadow-lg hover:shadow-sky-500">
             <p>
               <span className="material-symbols-sharp">mail</span>
               <span> </span>jesseemerson7@gmail.com
@@ -42,7 +42,7 @@ export default function Contact() {
         </div>
         <div className="chat chat-end w-full">
           <div className="animate__animated animate__fadeIn animate__delay-2s chat-bubble text-white bg-green-600 md:p-5 text-xl shadow-md shadow-black">
-            Phone Number?
+            Phone number?
           </div>
         </div>
         <div

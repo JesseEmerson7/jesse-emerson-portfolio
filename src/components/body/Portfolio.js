@@ -7,7 +7,6 @@ import test from "../../assets/images/test.png";
 import pass from "../../assets/images/password.png";
 import BeeAware from "../../assets/images/BeeAware.png";
 
-
 export default function Portfolio() {
   const projects = [
     {
@@ -24,7 +23,7 @@ export default function Portfolio() {
     {
       id: 1,
       name: "Burger Builder",
-      desc: "Full stack web application that allows users to view, save, and create burger recipes and share them with others.",
+      desc: "Full stack web application that allows users to view, save, create burger recipes, and share recipes with others.",
       tech: "CSS, HTML, JavaScript, Node.js, MySQL, Sequelize.js,  Express.js, Handlebars.js, GitHub, Tailwind",
       contrib: "",
       image: picture,
@@ -76,7 +75,9 @@ export default function Portfolio() {
   const projectCards = projects.map((item) => {
     return (
       <div
-        className=" flex flex-col md:flex-row md:w-5/6 cardBg mx-auto rounded-lg w-[95%]" data-aos="fade-left" data-aos-duration="1000"
+        className=" flex flex-col md:flex-row md:w-5/6 cardBg mx-auto rounded-lg w-[95%]"
+        data-aos="fadeIn"
+        data-aos-duration="1000"
         key={item.id}
       >
         <figure className="flex justify-center items-center md:w-4/6">
@@ -94,10 +95,18 @@ export default function Portfolio() {
           </h2>
           <p>{item.tech}</p>
           <div className="card-actions justify-center">
-            <a className="btn btn-primary port-btn" href={item.gitHub} target="_blank">
+            <a
+              className="btn btn-primary port-btn"
+              href={item.gitHub}
+              target="_blank"
+            >
               View code
             </a>
-            <a className="btn btn-primary port-btn" href={item.webPage} target="_blank">
+            <a
+              className="btn btn-primary port-btn"
+              href={item.webPage}
+              target="_blank"
+            >
               View application
             </a>
           </div>
@@ -108,7 +117,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section className="flex flex-col w-full flex-wrap mt-5 text-white gap-5">
+      <section className="flex flex-col w-full flex-wrap mt-5 text-white gap-5 mb-10">
         {projectCards}
       </section>
     </>
