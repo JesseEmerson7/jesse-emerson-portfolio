@@ -17,3 +17,35 @@ body{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#hero-image-contact {
+  background-image: linear-gradient(rgba(16, 84, 139, 0.726), rgba(0, 0, 0, 0.226)), url("../images/jax.jpg");
+
+  /* Set a specific height */
+  
+  height: 165px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text{
+  background-color: rgba(62, 238, 238, 0.388); 
+  
+}
+
+#hero-image-portfolio{
+  background-image: linear-gradient(rgba(16, 84, 139, 0.726), rgba(0, 0, 0, 0.226)), url("../images/backend.png");
+
+  /* Set a specific height */
+  
+  height: 120px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 0;
+}

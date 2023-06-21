@@ -6,6 +6,7 @@ import back from "../../assets/images/backend.png";
 import test from "../../assets/images/test.png";
 import pass from "../../assets/images/password.png";
 import BeeAware from "../../assets/images/BeeAware.png";
+import Hero from "../Hero";
 
 export default function Portfolio() {
   const projects = [
@@ -117,6 +118,7 @@ export default function Portfolio() {
 
   return (
     <>
+      <Hero title={"Portfolio"} id={"hero-image-portfolio"}/>
       <section className="flex flex-col w-full flex-wrap mt-5 text-white gap-5 mb-10">
         {projectCards}
       </section>

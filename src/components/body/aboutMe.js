@@ -5,7 +5,6 @@ import profile2 from "../../assets/images/profile-4.jpg";
 //replace this pic below
 import { useState, useEffect } from "react";
 
-
 export default function About() {
   const [currentPic, ChangePic] = useState(0);
   const [skillButton, changeSkill] = useState(false);
@@ -20,17 +19,11 @@ export default function About() {
     return () => clearInterval(interval);
   }, [pictureList.length]);
 
-  const toggleSkill = ()=>{
+  const toggleSkill = () => {
     changeSkill(!skillButton);
-    const container = document.getElementById('skill-scroll');
+    const container = document.getElementById("skill-scroll");
     container.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
-
-  
-
-  
-
-
+  };
 
   return (
     <>
@@ -49,8 +42,7 @@ export default function About() {
             <div id="picture-text">
               <p className="text-xl">Jesse Emerson</p>
               <p className=" text-lg">
-                MERN stack developer certified by <br />
-                the University of Central Florida
+                MERN Stack Web Developer
               </p>
               <p></p>
             </div>
@@ -81,15 +73,24 @@ export default function About() {
         {/* skills section */}
         <section className="flex flex-col flex-wrap my-10">
           {/* daisy button start */}
-          <div id="skill-scroll" className={skillButton?"collapse bg-base-200 text-amber-200 ":"collapse bg-base-200 "} onClick={toggleSkill}  >
+          <div
+            id="skill-scroll"
+            className={
+              skillButton
+                ? "collapse bg-base-200 text-amber-200 "
+                : "collapse bg-base-200 "
+            }
+            onClick={toggleSkill}
+          >
             <input type="checkbox" />
             <div className="collapse-title text-xl font-medium text-center">
-              {skillButton?"Skills":"Click to show skill list"}
+              {skillButton ? "Skills" : "Click to show skill list"}
             </div>
             <div className="collapse-content">
               <marquee id="scroll-text">
-              JavaScript ES6+,  CSS3,  HTML5,  SQL,  NoSQL,  GitHub,  MongoDB,  Mongoose,  MySQL,  Sequelize,  Express,  React,  Node,  Handlebars,  jQuery,  Bootstrap,  Tailwind CSS
-
+                JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, GitHub, MongoDB,
+                Mongoose, MySQL, Sequelize, Express, React, Node, Handlebars,
+                jQuery, Bootstrap, Tailwind CSS
               </marquee>
             </div>
           </div>

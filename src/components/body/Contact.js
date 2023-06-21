@@ -1,5 +1,6 @@
 import "../../assets/css/contact.css";
 import "animate.css";
+import Hero from "../Hero";
 
 export default function Contact() {
   //handle link clicks for chat bubbles
@@ -12,11 +13,12 @@ export default function Contact() {
   return (
     <div className="h-full md:mb-20">
       {/* hero img */}
-      <div id="hero-image" className="flex justify-start">
+      <Hero title={"Contact Info"} id={"hero-image-contact"}/>
+      {/* <div id="hero-image" className="flex justify-start">
         <h1 className="text-2xl font-semibold mt-10 ml-5 hero-text h-min p-2 md:p-4 rounded-xl text-white ">
           Contact Info
         </h1>
-      </div>
+      </div> */}
       {/* text bubble section */}
       <div className="w-full md:w-2/3 md:mx-auto py-6 pb-10 flex flex-col gap-4">
         <div className="chat chat-start w-full">
