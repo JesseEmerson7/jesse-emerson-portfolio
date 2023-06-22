@@ -113,10 +113,10 @@ const ResumeHtml = () => {
           <p className="mb-2">2021 – 2023</p>
           <p className="mb-2">Black Hammock Bee Farm, Oviedo, FL</p>
           <p>
-            Utilized problem-solving skills to carefully relocate feral honey
-            bees from customers' homes, employing effective techniques to safely
-            remove bee nests, all while actively educating others about honey
-            bee preservation and safety.
+            Effective communication skills when interacting with customers,
+            providing clear and concise explanations about the inspection
+            process, and addressing any concerns or questions they had.
+            Attention to detail while inspecting life safety equipment.
           </p>
           <ul className="list-disc ml-8 mt-2">
             <li>Rescued over 500 feral bee colonies.</li>
