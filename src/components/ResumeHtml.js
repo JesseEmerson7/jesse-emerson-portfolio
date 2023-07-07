@@ -47,7 +47,7 @@ const ResumeHtml = () => {
           pollinators.
         </p>
         <p className="mb-4">
-          GitHub:{" "}
+          GitHub:
           <a href="https://github.com/JesseEmerson7/BeeAware">
             github.com/JesseEmerson7/BeeAware
           </a>

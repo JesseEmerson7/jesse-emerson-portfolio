@@ -4,6 +4,7 @@
     height: 300px;
     box-shadow: 2px 2px 15px black;
     border: 2px solid rgb(14, 134, 214) ;
+    object-fit: cover;
 }
 
 #pic-name{
