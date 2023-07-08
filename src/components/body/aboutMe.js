@@ -1,17 +1,19 @@
 import "../../assets/css/aboutMe.css";
-import profile from "../../assets/images/profile-5.jpg"
-import profile3 from "../../assets/images/profile-7.jpg"
-import profile5 from "../../assets/images/profile-8.jpg"
-//replace this pic below
+import profile2 from "../../assets/images/profile-5.jpg"
+import profile1 from "../../assets/images/profile-7.jpg"
+import profile3 from "../../assets/images/profile-8.jpg"
+
 import { useState, useEffect } from "react";
 
 export default function About() {
+ //state for skill button text and picture slideshow
   const [currentPic, ChangePic] = useState(0);
   const [skillButton, changeSkill] = useState(false);
 
-  const pictureList = [profile3,  profile, profile5 ];
+  const pictureList = [profile1,  profile2, profile3 ];
 
   useEffect(() => {
+    //slideshow starts on page load and loops after it reaches the end of the array
     const interval = setInterval(() => {
       ChangePic((prevIndex) => (prevIndex + 1) % pictureList.length);
     }, 4000);
@@ -51,6 +53,7 @@ export default function About() {
             id="bio"
             className=" w-[95%] mx-auto mb-5 md:w-2/3 md:h-2/3 md:my-auto md:mx-5"
           >
+            {/* bio */}
             <div id="bio-card" className="">
               <div className="">
                 <p className="text-xl py-5 text-center">
