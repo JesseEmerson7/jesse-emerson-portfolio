@@ -49,7 +49,7 @@ const ResumeHtml = () => {
         <p className="mb-4">
           GitHub:
           <a href="https://github.com/JesseEmerson7/BeeAware">
-            github.com/JesseEmerson7/BeeAware
+            github.com/JesseEmerson7/<br/>BeeAware
           </a>
           <br />
           Live Application:{" "}

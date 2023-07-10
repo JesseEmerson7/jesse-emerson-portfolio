@@ -17,7 +17,7 @@ export default function Resume() {
         >
           Download via google docs
         </button>
-        <div className=" animate__animated animate__fadeIn bg-white text-black md:w-2/3 mx-auto mb-5">
+        <div className=" animate__animated animate__fadeIn bg-white text-black w-full md:w-2/3 md:mx-auto mb-5">
           <ResumeHtml />
         </div>
         
