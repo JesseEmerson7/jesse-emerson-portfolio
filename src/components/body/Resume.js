@@ -1,11 +1,10 @@
 import ResumeHtml from "../ResumeHtml";
 import "animate.css";
 
-
 export default function Resume() {
   const handleBtn = () => {
     window.open(
-      "https://docs.google.com/document/d/13VHmJZDtbdPDRRBUbh3u9E-hdlLN-V7lI_g1xpTZvJs/edit?usp=sharing"
+      "https://docs.google.com/document/d/1F-r4H8MZH0nI_MfvvuB4wFfrzDrAlQ_Y1-BHZKnvx54/edit?usp=drive_link"
     );
   };
   return (
@@ -20,7 +19,7 @@ export default function Resume() {
         <div className=" animate__animated animate__fadeIn bg-white text-black w-full md:w-2/3 md:mx-auto mb-5">
           <ResumeHtml />
         </div>
-        
+
         {/* <iframe
           className=" w-full h-full md:w-3/6 mb-5"
           title="Jesse's Resume"
