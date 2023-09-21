@@ -1,5 +1,6 @@
 import "../../assets/css/aboutMe.css";
 import jax from "../../assets/images/jax.jpg";
+import heroVid from "../../assets/videos/hero.mp4";
 
 // import { useState, useEffect } from "react";
 
@@ -7,14 +8,19 @@ export default function About() {
   return (
     <>
       {/* hero video will be bg of section */}
-      <section id="heroMp4">
+      <section
+        id="heroVideo"
+        className=" flex flex-col justify-center items-center  bg-black"
+      >
+        {/* div housing the rotating logos - adjectives - learn more btn */}
         <div>
-          {/* div housing the rotating logos - adjectives - learn more btn */}
-          <div>
-            {/* adjective text */}
+          {/* adjective text */}
+          <div id="adjSection" className="flex justify-center items-center">
             <div>
-              <h2>Passionate</h2>
-              <button>Learn More</button>
+              <h2 className="mb-10 font-bold text-4xl">Passionate</h2>
+              <div className="w-full flex justify-center items-center">
+                <button className=" text-sm font-semibold text-center bg-slate-300 bg-opacity-30 p-2 rounded-lg hover:bg-slate-400 duration-500 hover:text-black">Learn More</button>
+              </div>
             </div>
           </div>
         </div>
