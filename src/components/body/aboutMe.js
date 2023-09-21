@@ -15,29 +15,29 @@ export default function About() {
         {/* div housing the rotating logos - adjectives - learn more btn */}
         <div>
           {/* adjective text */}
-          <div id="adjSection" className="flex justify-center items-center">
-            <div>
+          <div id="adjSection" className="flex justify-center items-center w-full">
+            <div className="w-vw">
               <h2 className="mb-10 font-bold text-4xl">Passionate</h2>
               <div className="w-full flex justify-center items-center">
-                <button className=" text-sm font-semibold text-center bg-slate-300 bg-opacity-30 p-2 rounded-lg hover:bg-slate-400 duration-500 hover:text-black">Learn More</button>
+                <button className=" text-sm font-semibold text-center bg-slate-300 bg-opacity-30 p-2 rounded-lg hover:bg-slate-400 duration-500 hover:text-black">Learn More about Jesse</button>
               </div>
             </div>
           </div>
         </div>
         {/* font end back end and more buttons */}
-        <div>
+        <div className=" w-[80%] h-[100%] mt-5 flex flex-row justify-between items-end">
           {/* front */}
-          <div className="frontEnd">
+          <div className="frontEnd btn">
             <div className="LogoListDiv"></div>
             <h3>Front End</h3>
           </div>
           {/* back */}
-          <div className="backEnd">
+          <div className="backEnd btn">
             <div className="LogoListDiv"></div>
             <h3>Back End</h3>
           </div>
           {/* more */}
-          <div className="moreBtn">
+          <div className="moreBtn btn mr-7">
             <div className="LogoListDiv"></div>
             <h3>More</h3>
           </div>
