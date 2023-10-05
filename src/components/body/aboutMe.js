@@ -69,8 +69,8 @@ export default function About() {
           </div>
           {/* about me body - text to change on click of headers */}
           <div className="flex flex-col md:flex-row aboutDescDiv py-10 px-3">
-          <img src={jesse1} alt="Jesse Emerson" className="aboutMeImg md:h-80 mx-auto md:mx-9 float-left "/>
-          <p className="aboutText p-0 md:p-8">
+          <img src={jesse1} alt="Jesse Emerson" className="aboutMeImg h-52 md:h-60 lg:h-80 mx-auto lg:mx-9 float-left "/>
+          <p className="aboutText p-0 lg:p-8">
             I am a full stack web developer certified by the University of
             Central Florida Coding Bootcamp Program. I am proficient in
             front-end technologies such as: HTML, CSS, and JavaScript. This
@@ -91,26 +91,26 @@ export default function About() {
       <section className="bg-slate-500">
         {/* title of work experience */}
         <div className="w-full flex justify-center">
-          <h5 className="bg-black w-40 text-center relative bottom-4 p-3">Work Experience</h5>
+          <h5 className="bg-black w-40 text-center relative bottom-4 p-3 mb-7">Work Experience</h5>
         </div>
         {/* cards for work */}
-        <div className=" h-screen md:h-fit flex flex-col md:flex-row">
+        <div className="md:h-fit flex flex-col md:flex-row gap-6 md:gap-4 px-2 md:px-6 md:pt-5 pb-10">
           {/* card one for bees */}
-          <div>
+          <div className=" jobCard w-full md:w-1/3 h-5/6">
             {/* img */}
-            <p className="workTitle">Bee Keeper</p>
+            <p className="workTitle ">Bee Keeper</p>
             <p>info about this job</p>
           </div>
           {/* card about fire inspector */}
-          <div>
+          <div className=" jobCard w-full md:w-1/3 h-5/6">
             {/* img */}
-            <p>Fire Alarm Technician</p>
+            <p className="workTitle ">Fire Alarm Technician</p>
             <p>info about this job</p>
           </div>
           {/* card about 1000 degrees */}
-          <div>
+          <div className="jobCard w-full md:w-1/3 h-5/6">
             {/* img */}
-            <p>1000 Degrees Pizza</p>
+            <p className="workTitle ">1000 Degrees Pizza</p>
             <p>Info about this job</p>
           </div>
         </div>
