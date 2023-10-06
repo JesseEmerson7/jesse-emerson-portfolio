@@ -20,25 +20,48 @@
 }
 
 #heroVideo {
-   min-height: 90vh;
-   background-image: url("../images/forest.jpeg");
-   background-repeat: no-repeat;
-   height: 100%;
-   background-position: center;
-   background-size: cover;
+  min-height: 90vh;
+  background-image: url("../images/forest.jpeg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 #adjSection {
-    height: 60vh;
+  height: 60vh;
 }
 
-.aboutMeTitle{
-  border: 1px solid white;
+.aboutMeTitle {
+  border: 1px solid rgba(61, 218, 218, 0.847);
   width: 100%;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(7, 44, 79);
+}
+
+.aboutMeTitle:hover{
+  background-color: rgba(61, 218, 218, 0.466);
+  color: black;
+  font-size: large;
+  transition-duration: 700ms;
+  cursor: pointer;
+}
+
+.aboutMeCurrent {
+  border: 1px solid rgba(61, 218, 218, 0.847);
+  border-bottom: 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(215, 231, 245);
+  color: black;
+  font-size: larger;
+  font-weight:600;
 }
 
 .aboutMeImg {
@@ -51,7 +74,12 @@
 
 .aboutDescDiv {
   gap: 20px;
-  border: 1px solid white;
+  border: 1px solid rgba(62, 238, 238, 0.847);
+  border-top: 0;
+  background-color: rgb(215, 231, 245);
+  color: black;
+  font-weight: 500;
+  font-size: x-large;
 }
 
 .jobCard {
@@ -72,6 +100,8 @@
   text-align: center;
 }
 
+
+
 .forestBtn {
   background-color: rgba(62, 238, 238, 0.279);
   border-radius: 60px;
@@ -79,11 +109,11 @@
 
 .frontBack {
   background-color: rgba(73, 105, 105, 0.744);
-  border: 1px solid rgba(62, 238, 238, 0.847) ;
+  border: 1px solid rgba(62, 238, 238, 0.847);
   padding: 10px;
   border-radius: 10px;
   color: white;
-  font-size:large;
+  font-size: large;
   font-weight: 500;
 }
 
@@ -98,6 +128,6 @@
 }
 
 .scrollingBgAbout {
-  background: url("../images/header-pic4.jpg")100%;
+  background: url("../images/header-pic4.jpg") 100%;
   height: 50px;
 }

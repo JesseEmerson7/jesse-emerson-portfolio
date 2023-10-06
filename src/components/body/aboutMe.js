@@ -1,29 +1,29 @@
 import { useState, useEffect, useRef } from "react";
 import "../../assets/css/aboutMe.css";
-import jesse1 from "../../assets/images/profile-7.jpg";
-import javaScript from "../../assets/images/javascript.png"
-import css from "../../assets/images/csslogo.png"
-import html from "../../assets/images/htmllogo.png"
-import php from "../../assets/images/php.png"
-import jquery  from "../../assets/images/jquery.png"
-import cs from "../../assets/images/cs.png"
-import graph from "../../assets/images/graphql.png"
-import java from "../../assets/images/java.png"
-import mongo from "../../assets/images/mongodb.png"
-import mongoose from "../../assets/images/mongoose.png"
-import mysql from "../../assets/images/mysql.png"
-import node from "../../assets/images/node.png"
-import rest from "../../assets/images/rest.png"
-import seq from "../../assets/images/se.png"
-import boot from "../../assets/images/boot.jfif"
-import tail from "../../assets/images/tail.png"
-import express from "../../assets/images/express.png"
+import javaScript from "../../assets/images/javascript.png";
+import css from "../../assets/images/csslogo.png";
+import html from "../../assets/images/htmllogo.png";
+import php from "../../assets/images/php.png";
+import jquery from "../../assets/images/jquery.png";
+import cs from "../../assets/images/cs.png";
+import graph from "../../assets/images/graphql.png";
+import java from "../../assets/images/java.png";
+import mongo from "../../assets/images/mongodb.png";
+import mongoose from "../../assets/images/mongoose.png";
+import mysql from "../../assets/images/mysql.png";
+import node from "../../assets/images/node.png";
+import rest from "../../assets/images/rest.png";
+import seq from "../../assets/images/se.png";
+import boot from "../../assets/images/boot.jfif";
+import tail from "../../assets/images/tail.png";
+import express from "../../assets/images/express.png";
+import AboutCard from "../aboutCard"
 
 export default function About() {
   //----global var----
-  const frontEnd = [javaScript,css,html,jquery,php,boot,tail,rest];
-  const backEnd = [node,express,mysql,seq,mongo,mongoose,graph];
-  const more = [cs,java];
+  const frontEnd = [javaScript, css, html, jquery, php, boot, tail, rest];
+  const backEnd = [node, express, mysql, seq, mongo, mongoose, graph];
+  const more = [cs, java];
   const adjectives = [
     "Passionate",
     "Determined",
@@ -82,7 +82,7 @@ export default function About() {
         </div>
         {/* logos div */}
         <div className=" w-full">
-        {/* <div
+          {/* <div
           id="my-logs"
           className="flex flex-col md:flex-row gap-2 items-center text-center w-full"
         >
@@ -107,58 +107,30 @@ export default function About() {
             )
           })}</div>
         </div> */}
-        {/* font end back end and more buttons */}
-        <div className=" hidden w-full md:gap-28 h-[100%] mt-5 mb-5 md:flex flex-row justify-evenly items-end">
-          {/* front */}
-          <div className="frontEnd">
-            <h3 className="frontBack w-14 md:w-full">Front End</h3>
-          </div>
-          {/* back */}
-          <div className="backEnd">
-            <h3 className=" frontBack w-14 md:w-full">Back End</h3>
-          </div>
-          {/* more */}
-          <div className="moreBtn">
-            <h3 className="frontBack w-14 md:w-full">More</h3>
+          {/* font end back end and more buttons */}
+          <div className=" hidden w-full md:gap-28 h-[100%] mt-5 mb-5 md:flex flex-row justify-evenly items-end">
+            {/* front */}
+            <div className="frontEnd">
+              <h3 className="frontBack w-14 md:w-full">Front End</h3>
+            </div>
+            {/* back */}
+            <div className="backEnd">
+              <h3 className=" frontBack w-14 md:w-full">Back End</h3>
+            </div>
+            {/* more */}
+            <div className="moreBtn">
+              <h3 className="frontBack w-14 md:w-full">More</h3>
+            </div>
           </div>
         </div>
-        </div>
-        
       </section>
       {/* scrolling bg */}
-      <div  className="scrollingBgAbout"></div>
+      <div className="scrollingBgAbout"></div>
       <section ref={aboutRef} className=" py-3 md:py-40 bg-slate-500">
         {/* about me section div */}
-        <div className="w-full md:w-5/6 mx-auto pt-10">
-          {/* header div */}
-          <div className="flex justify-evenly">
-            <h4 className="aboutMeTitle">About me</h4>
-            <h4 className="aboutMeTitle">Education</h4>
-            <h4 className="aboutMeTitle">Skills</h4>
-            <h4 className="aboutMeTitle">Hobbies</h4>
-          </div>
-          {/* about me body - text to change on click of headers */}
-          <div className="flex flex-col md:flex-row aboutDescDiv py-10 px-3">
-            <img
-              src={jesse1}
-              alt="Jesse Emerson"
-              className="aboutMeImg h-52 md:h-60 lg:h-80 mx-auto lg:mx-9 float-left "
-            />
-            <p className="aboutText p-0 lg:p-8">
-              I am a full stack web developer certified by the University of
-              Central Florida Coding Bootcamp Program. I am proficient in
-              front-end technologies such as: HTML, CSS, and JavaScript. This
-              allows me to create visually appealing and responsive user
-              interfaces. With expertise in frameworks like React.js, I build
-              unique, dynamic, and interactive web applications. On the
-              back-end, I utilize Node.js and Express.js to develop RESTful APIs
-              for data management. I excel at problem-solving, teamwork, and I
-              always pay attention to detail. I'm excited to contribute to
-              cutting-edge projects while continually enhancing my web
-              development skills
-            </p>
-          </div>
-        </div>
+        
+        <AboutCard/>
+        
       </section>
       {/* scrolling bg */}
       <div className="scrollingBgAbout"></div>
