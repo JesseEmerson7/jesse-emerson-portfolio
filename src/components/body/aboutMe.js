@@ -92,35 +92,35 @@ export default function About() {
       </section>
       {/* scrolling bg */}
       <div className="scrollingBgAbout"></div>
-      <section className="">
-        {/* title of work experience */}
+      {/* <section className="">
+        
         <div className="w-full flex justify-center">
           <h5 className="bg-black w-40 text-center relative bottom-4 p-3 mb-7">
             Work Experience
           </h5>
         </div>
-        {/* cards for work */}
+    
         <div className="md:h-fit flex flex-col md:flex-row gap-6 md:gap-4 px-2 md:px-6 md:pt-5 pb-10">
-          {/* card one for bees */}
+       
           <div className=" jobCard w-full md:w-1/3 h-5/6">
-            {/* img */}
+          
             <p className="workTitle ">Bee Keeper</p>
             <p>info about this job</p>
           </div>
-          {/* card about fire inspector */}
+          {/* card about fire inspector 
           <div className=" jobCard w-full md:w-1/3 h-5/6">
-            {/* img */}
+        
             <p className="workTitle ">Fire Alarm Technician</p>
             <p>info about this job</p>
           </div>
-          {/* card about 1000 degrees */}
+        
           <div className="jobCard w-full md:w-1/3 h-5/6">
-            {/* img */}
+            
             <p className="workTitle ">1000 Degrees Pizza</p>
             <p>Info about this job</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

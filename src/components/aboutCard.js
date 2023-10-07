@@ -70,7 +70,7 @@ const AboutText = () => {
         refined my customer service, problem-solving, and teamwork skills.
         <br></br>
         <br></br>
-        My passion lies in Information Technology, software development, and web
+        My passion lies in information technology, software development, and web
         design. Currently, I am pursuing a bachelor's degree in Information
         Systems Technology with a specialization in software development. I've
         also earned a certification in full-stack web development from the
