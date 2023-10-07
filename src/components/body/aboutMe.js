@@ -1,29 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import "../../assets/css/aboutMe.css";
-import javaScript from "../../assets/images/javascript.png";
-import css from "../../assets/images/csslogo.png";
-import html from "../../assets/images/htmllogo.png";
-import php from "../../assets/images/php.png";
-import jquery from "../../assets/images/jquery.png";
-import cs from "../../assets/images/cs.png";
-import graph from "../../assets/images/graphql.png";
-import java from "../../assets/images/java.png";
-import mongo from "../../assets/images/mongodb.png";
-import mongoose from "../../assets/images/mongoose.png";
-import mysql from "../../assets/images/mysql.png";
-import node from "../../assets/images/node.png";
-import rest from "../../assets/images/rest.png";
-import seq from "../../assets/images/se.png";
-import boot from "../../assets/images/boot.jfif";
-import tail from "../../assets/images/tail.png";
-import express from "../../assets/images/express.png";
 import AboutCard from "../aboutCard"
 
 export default function About() {
   //----global var----
-  const frontEnd = [javaScript, css, html, jquery, php, boot, tail, rest];
-  const backEnd = [node, express, mysql, seq, mongo, mongoose, graph];
-  const more = [cs, java];
   const adjectives = [
     "Passionate",
     "Determined",
@@ -53,7 +33,7 @@ export default function About() {
   //-----------------jsx return----------------------
   return (
     <div id="about-me-div">
-      {/* hero video will be bg of section */}
+      {/* hero will be bg of section */}
       <section
         id="heroVideo"
         className=" flex flex-col justify-center items-center"
@@ -82,31 +62,7 @@ export default function About() {
         </div>
         {/* logos div */}
         <div className=" w-full">
-          {/* <div
-          id="my-logs"
-          className="flex flex-col md:flex-row gap-2 items-center text-center w-full"
-        >
-        
-          <div className="LogoListDiv flex justify-center">
-          {frontEnd.map((image)=>{
-            return(
-              <img src={image} alt="logo" className="logoImages"/>
-            )
-          })}
-          </div>{" "}
-          <div className="LogoListDiv flex justify-center">
-          {backEnd.map((image)=>{
-            return(
-              <img src={image} alt="logo" className="logoImages"/>
-            )
-          })}
-          </div>
-          <div className="LogoListDiv flex justify-center">  {more.map((image)=>{
-            return(
-              <img src={image} alt="logo" className="logoImages"/>
-            )
-          })}</div>
-        </div> */}
+          
           {/* font end back end and more buttons */}
           <div className=" hidden w-full md:gap-28 h-[100%] mt-5 mb-5 md:flex flex-row justify-evenly items-end">
             {/* front */}
@@ -126,15 +82,17 @@ export default function About() {
       </section>
       {/* scrolling bg */}
       <div className="scrollingBgAbout"></div>
-      <section ref={aboutRef} className=" py-3 md:py-40 bg-slate-500">
+      <section className=" py-3 md:py-40 ">
         {/* about me section div */}
+        <div ref={aboutRef}>
+        <AboutCard />
+        </div>
         
-        <AboutCard/>
         
       </section>
       {/* scrolling bg */}
       <div className="scrollingBgAbout"></div>
-      <section className="bg-slate-500">
+      <section className="">
         {/* title of work experience */}
         <div className="w-full flex justify-center">
           <h5 className="bg-black w-40 text-center relative bottom-4 p-3 mb-7">
