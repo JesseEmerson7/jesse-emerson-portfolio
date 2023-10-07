@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/jesse-emerson-portfolio/static/css/main.cc47612d.css",
-    "main.js": "/jesse-emerson-portfolio/static/js/main.c3185f18.js",
+    "main.css": "/jesse-emerson-portfolio/static/css/main.7c3d42b1.css",
+    "main.js": "/jesse-emerson-portfolio/static/js/main.71da2cd6.js",
+    "static/media/forest.jpeg": "/jesse-emerson-portfolio/static/media/forest.88453830bc2e82381dc3.jpeg",
+    "static/media/beekeeping.jpg": "/jesse-emerson-portfolio/static/media/beekeeping.857934bde2ee1cee016d.jpg",
+    "static/media/gardening.jpg": "/jesse-emerson-portfolio/static/media/gardening.757d21f9d3de85583190.jpg",
     "static/media/jax.jpg": "/jesse-emerson-portfolio/static/media/jax.a6fe1ac66a946bfcea48.jpg",
     "static/media/bite-bud.png": "/jesse-emerson-portfolio/static/media/bite-bud.e136372ff7aad397603e.png",
-    "static/media/profile-5.jpg": "/jesse-emerson-portfolio/static/media/profile-5.cca126d365667b316cca.jpg",
+    "static/media/hiking.jpg": "/jesse-emerson-portfolio/static/media/hiking.3df02fa40962f35021de.jpg",
     "static/media/weather-app.png": "/jesse-emerson-portfolio/static/media/weather-app.daa47d6b6ffe61cb0e21.png",
-    "static/media/BeeAware.png": "/jesse-emerson-portfolio/static/media/BeeAware.feb86a54ab01345c5cb9.png",
+    "static/media/BeeAware.png": "/jesse-emerson-portfolio/static/media/BeeAware.42b1cb96a09fe070c36b.png",
     "static/media/backend.png": "/jesse-emerson-portfolio/static/media/backend.109ef78d65acfe90a732.png",
     "static/media/afternoon-peak-41409.herokuapp.com_ (1).png": "/jesse-emerson-portfolio/static/media/afternoon-peak-41409.herokuapp.com_ (1).ef63be3ecaad1a58d942.png",
+    "static/media/ed.png": "/jesse-emerson-portfolio/static/media/ed.65637d6574b810d8102b.png",
     "static/media/wave_background.jpg": "/jesse-emerson-portfolio/static/media/wave_background.51bc2294794603318832.jpg",
     "static/media/test.png": "/jesse-emerson-portfolio/static/media/test.a75405516b974258fe8a.png",
-    "static/media/profile-8.jpg": "/jesse-emerson-portfolio/static/media/profile-8.c10e36f500a53c2830e4.jpg",
     "static/media/header-pic4.jpg": "/jesse-emerson-portfolio/static/media/header-pic4.18091d716b0013c7fc36.jpg",
     "static/media/profile-7.jpg": "/jesse-emerson-portfolio/static/media/profile-7.d1848659034fdb55702b.jpg",
+    "static/media/csslogo.png": "/jesse-emerson-portfolio/static/media/csslogo.7b2eb4849c1c79b2be14.png",
     "static/media/password.png": "/jesse-emerson-portfolio/static/media/password.aa25cbf89939def02f6b.png",
+    "static/media/boot.jfif": "/jesse-emerson-portfolio/static/media/boot.e99b9b2e9d5704d02243.jfif",
     "index.html": "/jesse-emerson-portfolio/index.html",
-    "main.cc47612d.css.map": "/jesse-emerson-portfolio/static/css/main.cc47612d.css.map",
-    "main.c3185f18.js.map": "/jesse-emerson-portfolio/static/js/main.c3185f18.js.map"
+    "main.7c3d42b1.css.map": "/jesse-emerson-portfolio/static/css/main.7c3d42b1.css.map",
+    "main.71da2cd6.js.map": "/jesse-emerson-portfolio/static/js/main.71da2cd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc47612d.css",
-    "static/js/main.c3185f18.js"
+    "static/css/main.7c3d42b1.css",
+    "static/js/main.71da2cd6.js"
   ]
 }
