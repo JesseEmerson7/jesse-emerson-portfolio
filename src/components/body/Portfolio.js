@@ -7,6 +7,7 @@ import test from "../../assets/images/test.png";
 import pass from "../../assets/images/password.png";
 import BeeAware from "../../assets/images/BeeAware.png";
 import Hero from "../Hero";
+import simple from "../../assets/images/simplicity.png";
 
 export default function Portfolio() {
   const projects = [
@@ -23,6 +24,17 @@ export default function Portfolio() {
 
     {
       id: 1,
+      name: "BeeAware",
+      desc: "Florida Realtor's Form Simplicity login page recreated using React.",
+      tech: "React, Tailwind, CSS",
+      contrib: "",
+      image: simple,
+      webPage: "https://jesseemerson7.github.io/simplicity-login/",
+      gitHub: "https://github.com/JesseEmerson7/simplicity-login",
+    },
+
+    {
+      id: 2,
       name: "Burger Builder",
       desc: "Full stack web application that allows users to view, save, create burger recipes, and share recipes with others.",
       tech: "CSS, HTML, JavaScript, Node.js, MySQL, Sequelize.js,  Express.js, Handlebars.js, GitHub, Tailwind",
@@ -32,7 +44,7 @@ export default function Portfolio() {
       gitHub: "https://github.com/APereyro/BurgerBuilder",
     },
     {
-      id: 2,
+      id: 3,
       name: "Weather Forecast",
       desc: "Front end web application that allows users to search any city by name and receive a 6 day weather forecast.",
       tech: "CSS, HTML, JavaScript, Open Weather API",
@@ -42,7 +54,7 @@ export default function Portfolio() {
       gitHub: "https://github.com/JesseEmerson7/Weather-forecast",
     },
     {
-      id: 3,
+      id: 4,
       name: "Bite Bud",
       desc: "Front end web application that allows users to search any city by name and receive a list of places to eat along with videos of things to do in that city.",
       tech: "CSS, HTML, JavaScript, Restaurant API, Youtube API",
@@ -52,7 +64,7 @@ export default function Portfolio() {
       gitHub: "https://github.com/Suzakijun1/BiteBud",
     },
     {
-      id: 4,
+      id: 5,
       name: "Quiz Time",
       desc: "Front end web application that tests the user's JavaScript knowledge.",
       tech: "CSS, HTML, JavaScript",
@@ -62,7 +74,7 @@ export default function Portfolio() {
       gitHub: "https://github.com/JesseEmerson7/quiz-time",
     },
     {
-      id: 5,
+      id: 6,
       name: "Password Generator ",
       desc: "Front end web application that generates a random secure password.",
       tech: "CSS, HTML, JavaScript",
@@ -72,7 +84,7 @@ export default function Portfolio() {
       gitHub: "https://github.com/JesseEmerson7/password-gen",
     },
     {
-      id: 6,
+      id: 7,
       name: "MongoDB Social Network ",
       desc: "Back end social network RESTful web API",
       tech: "JavaScript, MongoDb, Mongoose, Express, Node",
@@ -113,13 +125,17 @@ export default function Portfolio() {
             >
               View code
             </a>
-            {item.webPage != ''? <a
-              className="btn btn-primary port-btn"
-              href={item.webPage}
-              target="_blank"
-            >
-              View application
-            </a>:''}
+            {item.webPage != "" ? (
+              <a
+                className="btn btn-primary port-btn"
+                href={item.webPage}
+                target="_blank"
+              >
+                View application
+              </a>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>
@@ -128,7 +144,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <Hero title={"Portfolio"} id={"hero-image-portfolio"}/>
+      <Hero title={"Portfolio"} id={"hero-image-portfolio"} />
       <section className="flex flex-col w-full flex-wrap mt-5 text-white gap-5 mb-10">
         {projectCards}
       </section>

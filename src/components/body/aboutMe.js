@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "../../assets/css/aboutMe.css";
-import AboutCard from "../aboutCard"
+import AboutCard from "../aboutCard";
 
 export default function About() {
   //----global var----
@@ -21,7 +21,7 @@ export default function About() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setAdj((adjText) => (adjText + 1) % adjectives.length);
-    }, 2300);
+    }, 5000);
     return () => clearInterval(intervalId);
   }, [adjectives.length]);
 
@@ -62,7 +62,6 @@ export default function About() {
         </div>
         {/* logos div */}
         <div className=" w-full">
-          
           {/* font end back end and more buttons */}
           <div className=" hidden w-full md:gap-28 h-[100%] mt-5 mb-5 md:flex flex-row justify-evenly items-end">
             {/* front */}
@@ -85,10 +84,8 @@ export default function About() {
       <section className=" py-3 md:py-40 ">
         {/* about me section div */}
         <div ref={aboutRef}>
-        <AboutCard />
+          <AboutCard />
         </div>
-        
-        
       </section>
       {/* scrolling bg */}
       <div className="scrollingBgAbout"></div>
