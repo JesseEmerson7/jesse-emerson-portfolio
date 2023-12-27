@@ -24,7 +24,7 @@ export default function Portfolio() {
 
     {
       id: 1,
-      name: "BeeAware",
+      name: "Simplicity Login",
       desc: "Florida Realtor's Form Simplicity login page recreated using React.",
       tech: "React, Tailwind, CSS",
       contrib: "",
