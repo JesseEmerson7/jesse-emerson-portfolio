@@ -8,7 +8,7 @@ import pass from "../../assets/images/password.png";
 import BeeAware from "../../assets/images/BeeAware.png";
 import Hero from "../Hero";
 import simple from "../../assets/images/simplicity.png";
-import wordPress from "../../assets/images/WordPress.png"
+import wordPress from "../../assets/images/wordPress.png"
 
 export default function Portfolio() {
   const projects = [
@@ -129,13 +129,16 @@ export default function Portfolio() {
           </h2>
           <p>{item.tech}</p>
           <div className="card-actions justify-center">
-            <a
-              className="btn btn-primary port-btn"
-              href={item.gitHub}
-              target="_blank"
-            >
-              View code
-            </a>
+            {
+              item.gitHub != ""?(<a
+                className="btn btn-primary port-btn"
+                href={item.gitHub}
+                target="_blank"
+              >
+                View code
+              </a>):("")
+            }
+            
             {item.webPage != "" ? (
               <a
                 className="btn btn-primary port-btn"
