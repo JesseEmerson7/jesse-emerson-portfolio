@@ -4,7 +4,7 @@ import "animate.css";
 export default function Resume() {
   const handleBtn = () => {
     window.open(
-      "https://docs.google.com/document/d/1F-r4H8MZH0nI_MfvvuB4wFfrzDrAlQ_Y1-BHZKnvx54/edit?usp=drive_link"
+      "https://docs.google.com/document/d/1uvmwYk3-Lrt3ALrUntl1Rkv0qisunyhG/edit?usp=sharing&ouid=105346610875604683419&rtpof=true&sd=true"
     );
   };
   return (
