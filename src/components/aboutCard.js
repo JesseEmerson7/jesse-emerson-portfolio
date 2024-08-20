@@ -64,7 +64,7 @@ const AboutText = () => {
         className="aboutMeImg h-52 md:h-60 lg:h-80 mx-auto lg:mx-9 float-left shadow-lg "
       />
       <p className="aboutText p-0 lg:p-8">
-        Hello, I'm Jesse Emerson, a 26-year-old full-stack developer residing in
+        Hello, I'm Jesse Emerson, a 27-year-old full-stack developer residing in
         Orlando, Florida. Throughout my professional journey, I've served in
         roles such as Shift Manager and two technician positions, where I
         refined my customer service, problem-solving, and teamwork skills.
