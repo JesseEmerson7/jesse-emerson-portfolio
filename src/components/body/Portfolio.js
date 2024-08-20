@@ -40,7 +40,7 @@ export default function Portfolio() {
       tech: "WordPress, HTML, CSS",
       contrib: "",
       image: wordPress,
-      webPage: "https://ljd.vcj.mybluehost.me/",
+      webPage: "https://ljd.vcj.mybluehost.me/website_61648545/",
       gitHub: "",
     },
        
