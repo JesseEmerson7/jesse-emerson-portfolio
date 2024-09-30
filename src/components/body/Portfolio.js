@@ -8,9 +8,15 @@ import pass from "../../assets/images/password.png";
 import BeeAware from "../../assets/images/BeeAware.png";
 import Hero from "../Hero";
 import simple from "../../assets/images/simplicity.png";
-import wordPress from "../../assets/images/wordPress.png"
+import wordPress from "../../assets/images/wordPress.png";
+import { useEffect } from "react";
 
 export default function Portfolio() {
+  //on load the page will scroll to the top of the port
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const projects = [
     {
       id: 0,
@@ -43,7 +49,7 @@ export default function Portfolio() {
       webPage: "https://ljd.vcj.mybluehost.me/website_61648545/",
       gitHub: "",
     },
-       
+
     {
       id: 3,
       name: "Burger Builder",
@@ -129,16 +135,18 @@ export default function Portfolio() {
           </h2>
           <p>{item.tech}</p>
           <div className="card-actions justify-center">
-            {
-              item.gitHub != ""?(<a
+            {item.gitHub != "" ? (
+              <a
                 className="btn btn-primary port-btn"
                 href={item.gitHub}
                 target="_blank"
               >
                 View code
-              </a>):("")
-            }
-            
+              </a>
+            ) : (
+              ""
+            )}
+
             {item.webPage != "" ? (
               <a
                 className="btn btn-primary port-btn"

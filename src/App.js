@@ -5,7 +5,6 @@ import Contact from "./components/body/Contact";
 import Portfolio from "./components/body/Portfolio";
 import Resume from "./components/body/Resume";
 
-
 import { useState } from "react";
 
 function App() {
@@ -13,7 +12,9 @@ function App() {
 
   const renderPage = () => {
     if (currentPage === "about") {
-      return <About />;
+      return (
+        <About handlePageChange={handlePageChange} renderPage={renderPage} />
+      );
     }
     if (currentPage === "portfolio") {
       return <Portfolio />;
@@ -28,11 +29,11 @@ function App() {
 
   return (
     <>
-    <div className=" min-h-screen">
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
-    </div>
-    <Footer />
+      <div className=" min-h-screen">
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        {renderPage()}
+      </div>
+      <Footer />
     </>
   );
 }

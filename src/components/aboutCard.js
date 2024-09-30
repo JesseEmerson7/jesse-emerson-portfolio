@@ -25,7 +25,7 @@ import gardening from "../assets/images/gardening.jpg";
 import beekeeping from "../assets/images/beekeeping.jpg";
 import BeeAware from "../assets/images/BeeAware.png";
 
-const AboutCard = () => {
+const AboutCard = ({ handlePageChange, renderPage }) => {
   const [myTab, setTab] = useState("about");
   const [aboutText, setText] = useState(<AboutText />);
   //on click of tab changes state of the component to show different information
@@ -45,13 +45,22 @@ const AboutCard = () => {
       setText(<HobText />);
     }
   };
+
+  const handlePortBtn = () => {
+    handlePageChange("portfolio");
+    renderPage();
+  };
+
   return (
-    <>
+    <div className="flex flex-col justify-center items-center">
       <div className="w-full md:w-5/6 mx-auto pt-10">
         <AboutHeader myTab={myTab} handleTab={handleTab} />
         {aboutText}
       </div>
-    </>
+      <buttoon id="viewPort" className="btn mt-2" onClick={handlePortBtn}>
+        View Portfolio
+      </buttoon>
+    </div>
   );
 };
 
@@ -64,17 +73,22 @@ const AboutText = () => {
         className="aboutMeImg h-52 md:h-60 lg:h-80 mx-auto lg:mx-9 float-left shadow-lg "
       />
       <p className="aboutText p-0 lg:p-8">
-        Hello, I'm Jesse Emerson, a 27-year-old full-stack developer residing in
-        Orlando, Florida. Throughout my professional journey, I've served in
-        roles such as Shift Manager and two technician positions, where I
-        refined my customer service, problem-solving, and teamwork skills.
+        Hello, I'm Jesse Emerson, a 27-year-old full-stack developer based in
+        Orlando, Florida. In my professional journey, I've had the opportunity
+        to work as a Web Developer at a startup, where I honed my front-end and
+        JavaScript skills by building a crypto wallet dashboard application that
+        integrates with web APIs to dynamically display user wallet information.
+        Additionally, I served as a Data Intelligence Intern at Bayer Crop
+        Science, where I developed dashboards for large data sets and created
+        data visualization tools to help employees gain deeper insights into
+        their information.
         <br></br>
         <br></br>
         My passion lies in information technology, software development, and web
         design. Currently, I am pursuing a bachelor's degree in Information
-        Systems Technology with a specialization in software development. I've
-        also earned a certification in full-stack web development from the
-        University of Central Florida.
+        Systems Technology with a specialization in programming. I've also
+        earned a certification in full-stack web development from the University
+        of Central Florida.
         <br></br>
         <br></br>
         Outside of academia, I dedicate my free time to personal projects, where
@@ -106,7 +120,7 @@ const EdText = () => {
             {" "}
             Information Systems Technology
           </a>{" "}
-          with a specialization in software development.
+          with a specialization in programming.
         </p>
         <p className="aboutText p-0 lg:p-8">
           I have a certification in full-stack web development from the

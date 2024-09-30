@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import "../../assets/css/aboutMe.css";
 import AboutCard from "../aboutCard";
 
-export default function About() {
+export default function About({ handlePageChange, renderPage }) {
   //----global var----
   const adjectives = [
     "Passionate",
@@ -84,7 +84,10 @@ export default function About() {
       <section className=" py-3 md:py-40 ">
         {/* about me section div */}
         <div ref={aboutRef}>
-          <AboutCard />
+          <AboutCard
+            handlePageChange={handlePageChange}
+            renderPage={renderPage}
+          />
         </div>
       </section>
       {/* scrolling bg */}
