@@ -1,166 +1,199 @@
+import "../assets/css/resume.css";
+
 const ResumeHtml = () => {
   return (
     <>
       <div className="mx-auto p-8">
-        <h1 className="text-4xl font-bold mb-4 text-center">Jesse Emerson</h1>
-        <p className="mb-4 text-center">Orlando, FL</p>
-        <p className="mb-8 text-center">
-          Phone: 407-687-2391 | Email: jesseemerson7@gmail.com
-        </p>
-        <p className="mb-8 text-center">
-          LinkedIn:{" "}
-          <a href="linkedin.com/in/jesse-emerson57/">
-            linkedin.com/in/jesse-emerson57/
-          </a>
-          <br />
-          GitHub:{" "}
-          <a href="https://github.com/JesseEmerson7">
-            github.com/JesseEmerson7
-          </a>
-          <br />
-          Portfolio:{" "}
-          <a href="https://jesseemerson7.github.io/jesse-emerson-portfolio/">
-            jesseemerson7.github.io/jesse-emerson-portfolio/
-          </a>
-        </p>
-        <h2 className="text-2xl font-bold mb-4 text-center">Summary</h2>
-        <p className="mb-8 text-center">
-          Passionate Full Stack Developer with a strong dedication to continuous
-          learning and mastery of JavaScript, HTML, CSS, and other relevant
-          frameworks. Demonstrating leadership, creativity, effective problem
-          solving, and attention to detail. Enthusiastically seeking
-          opportunities to collaborate with accomplished software engineers in
-          crafting intuitive web applications that prioritize user experience.
-        </p>
-        <h2 className="text-2xl font-bold mb-4 text-center">
-          Technical Skills
-        </h2>
-        <p className="list-disc ml-8 mb-8">
-          JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, GitHub, MongoDB, Mongoose,
-          MySQL, Sequelize, Express, React, Node, Handlebars, jQuery, Bootstrap,
-          Tailwind CSS
-        </p>
-        <h2 className="text-2xl font-bold mb-4 text-center">Projects</h2>
-        <h3 className="text-xl font-bold mb-2">BeeAware</h3>
-        <p className="mb-2">
-          Full stack education and blog application about Florida’s local
-          pollinators.
-        </p>
-        <p className="mb-4">
-          GitHub:
-          <a href="https://github.com/JesseEmerson7/BeeAware">
-            github.com/JesseEmerson7/<br/>BeeAware
-          </a>
-          <br />
-          Live Application:{" "}
-          <a href="https://radiant-ocean-19328.herokuapp.com/Project">
-            radiant-ocean-19328.herokuapp.com/Project
-          </a>
-        </p>
-        <p className="mb-8">
-          Role: Project lead developer working in front and back end.
-          <br />
-          Tools: JavaScript, Tailwind CSS, Mongodb, Express, React, Node,
-          Mongoose, Apollo, GraphQL.
-        </p>
-        <h3 className="text-xl font-bold mb-2">Burger Builder</h3>
-        <p className="mb-2">
-          Full stack application that allows users to view, save, and create
-          burger recipes.
-        </p>
-        <p className="mb-4">
-          GitHub:{" "}
-          <a href="https://github.com/APereyro/BurgerBuilder">
-            github.com/APereyro/BurgerBuilder
-          </a>
-          <br />
-          Live Application:{" "}
-          <a href="https://afternoon-peak-41409.herokuapp.com/">
-            afternoon-peak-41409.herokuapp.com/
-          </a>
-        </p>
-        <p className="mb-8">
-          Role: Created and managed the MySQL database that powered the
-          application's backend. Worked on front end JavaScript logic as well.
-          <br />
-          Tools: JavaScript, HTML, Tailwind CSS, MySQL, Sequelize, Express,
-          Handlebars, Node.
-        </p>
-        <h3 className="text-xl font-bold mb-2">Weather Forecast</h3>
-        <p className="mb-2">
-          Front-end web application designed to retrieve weather data by the
-          user's city and give a 6-day forecast.
-        </p>
-        <p className="mb-4">
-          GitHub:{" "}
-          <a href="https://github.com/JesseEmerson7/Weather-forecast">
-            github.com/JesseEmerson7/Weather-forecast
-          </a>
-          <br />
-          Live Application:{" "}
-          <a href="https://jesseemerson7.github.io/Weather-forecast/">
-            jesseemerson7.github.io/Weather-forecast/
-          </a>
-        </p>
-        <p className="mb-8">
-          Role: Sole developer.
-          <br />
-          Tools: HTML, CSS, JavaScript.
-        </p>
-        <h2 className="text-2xl font-bold mb-4 text-center">Experience</h2>
-        <div className="mb-8">
-          <h3 className="text-xl font-bold">Honey Bee Relocation Technician</h3>
-          <p className="mb-2">2021 – 2023</p>
-          <p className="mb-2">Black Hammock Bee Farm, Oviedo, FL</p>
-          <p>
-            Effective communication skills when interacting with customers,
-            providing clear and concise explanations about the inspection
-            process, and addressing any concerns or questions they had.
-            Attention to detail while inspecting life safety equipment.
-          </p>
-          <ul className="list-disc ml-8 mt-2">
-            <li>Rescued over 500 feral bee colonies.</li>
-            <li>Led a team of two technicians.</li>
-          </ul>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-xl font-bold">
-            Fire Alarm Inspection Technician
-          </h3>
-          <p className="mb-2">2018 – 2020</p>
-          <p className="mb-2">Signature Systems of Florida, Casselberry, FL</p>
-          <p>
-            Responsible for inspecting fire alarm devices and equipment in
-            commercial buildings. Effectively communicated with customers,
-            providing clear and concise explanations about the inspection
-            process, and addressing any concerns or questions they had.
-          </p>
-          <ul className="list-disc ml-8 mt-2">
-            <li>Assessed and tested thousands of life safety devices.</li>
-            <li>Trained new employees.</li>
-          </ul>
-        </div>
-        <h2 className="text-2xl font-bold mb-4 text-center">Education</h2>
-        <div className="mb-8">
-          <h3 className="text-xl font-bold">
-            Full Stack Web Development Certificate
-          </h3>
-          <p>The University of Central Florida, Orlando, FL</p>
-          <p>
-            A 24-week intensive program focused on gaining technical programming
-            skills in HTML5, CSS3, JavaScript, jQuery, Bootstrap, Node.js,
-            MySQL, MongoDB, Express, Handelbars.js, and ReactJS.
-          </p>
-        </div>
-        <div className="mb-8">
-          <h3 className="text-xl font-bold">
-            Seminole State College (Currently attending)
-          </h3>
-          <p>Oviedo, FL</p>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold">High School Diploma</h3>
-          <p>Hagerty, Oviedo, FL</p>
+        <div className="resume-container">
+          <header>
+            <h1>Jesse Emerson</h1>
+            <p>
+              Orlando, FL | Phone: 407-687-2391 | Email:{" "}
+              <a href="mailto:jesseemerson7@gmail.com">
+                jesseemerson7@gmail.com
+              </a>
+            </p>
+            <p>
+              LinkedIn:{" "}
+              <a
+                href="https://linkedin.com/in/jesse-emerson57/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/in/jesse-emerson57/
+              </a>{" "}
+              | GitHub:{" "}
+              <a
+                href="https://github.com/JesseEmerson7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/JesseEmerson7
+              </a>{" "}
+              | Portfolio:{" "}
+              <a
+                href="https://jesseemerson7.github.io/jesse-emerson-portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                jesseemerson7.github.io/jesse-emerson-portfolio/
+              </a>
+            </p>
+          </header>
+
+          <section>
+            <h2>Summary</h2>
+            <p>
+              Versatile Web Developer with a passion for technology and
+              continuous learning. Skilled in creating and maintaining dynamic
+              web applications, proficient in both frontend and backend
+              technologies. Excels in leveraging modern technologies to bring
+              innovative solutions and strong problem-solving skills to the
+              table. A proactive team player who thrives in collaborative
+              environments and consistently delivers high-quality results.
+            </p>
+          </section>
+
+          <section>
+            <h2>Technical Skills</h2>
+            <p>
+              JavaScript ES6+, CSS3, HTML5, WordPress, PHP, SQL, NoSQL, GitHub,
+              MongoDB, Mongoose, Sequelize, GraphQL, Express, React, Node,
+              Handlebars, jQuery, Bootstrap, Tailwind, Python
+            </p>
+          </section>
+
+          <section>
+            <h2>Education</h2>
+            <ul>
+              <li>
+                Bachelor of Science in Information Systems Technology (Expected
+                2026) - Seminole State College, Oviedo, FL
+              </li>
+              <li>
+                Associate in Arts (2024) - Seminole State College, Oviedo, FL
+              </li>
+              <li>
+                Full Stack Web Development Certificate (2023) - University of
+                Central Florida, Orlando, FL
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Projects</h2>
+            <div className="project">
+              <h3>BeeAware</h3>
+              <p>
+                Full stack educational and blog application focusing on
+                Florida’s local pollinators.
+                <br />
+                GitHub:{" "}
+                <a
+                  href="https://github.com/JesseEmerson7/BeeAware"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/JesseEmerson7/BeeAware
+                </a>
+                <br />
+                Live Application:{" "}
+                <a
+                  href="https://radiant-ocean-19328.herokuapp.com/Project"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  radiant-ocean-19328.herokuapp.com/Project
+                </a>
+              </p>
+              <p>
+                Role: Lead Developer, responsible for both front-end and
+                back-end development.
+                <br />
+                Technologies Used: JavaScript, Tailwind CSS, MongoDB, Express,
+                React, Node.js, Mongoose, Apollo, GraphQL.
+              </p>
+            </div>
+
+            <div className="project">
+              <h3>Simplicity Login</h3>
+              <p>
+                Login form and website landing page that changes appearance
+                based on the time of day.
+                <br />
+                GitHub:{" "}
+                <a
+                  href="https://github.com/JesseEmerson7/simplicity-login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/JesseEmerson7/simplicity-login
+                </a>
+                <br />
+                Live Application:{" "}
+                <a
+                  href="https://jesseemerson7.github.io/simplicity-login/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  jesseemerson7.github.io/simplicity-login/
+                </a>
+              </p>
+              <p>Technologies Used: React, Tailwind</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Experience</h2>
+            <div className="experience">
+              <h3>Data Intelligence Intern</h3>
+              <p>Bayer - Orlando, FL (Remote) | May 2024 – August 2024</p>
+              <ul>
+                <li>
+                  Developed and maintained dashboards and reports to visualize
+                  key performance indicators and business metrics.
+                </li>
+                <li>
+                  Collaborated with cross-functional teams to identify data
+                  needs and provide actionable insights.
+                </li>
+                <li>
+                  Utilized SQL, Python, and various data visualization tools to
+                  analyze and present data.
+                </li>
+              </ul>
+            </div>
+
+            <div className="experience">
+              <h3>Web Developer</h3>
+              <p>
+                Figarelli House Corp - Orlando, FL | December 2023 – August 2024
+              </p>
+              <ul>
+                <li>
+                  Designed responsive and user-friendly frontend interfaces
+                  using HTML, CSS, and JavaScript, ensuring compatibility across
+                  browsers and devices.
+                </li>
+              </ul>
+            </div>
+
+            <div className="experience">
+              <h3>Fire Alarm Technician</h3>
+              <p>DynaFire - Castleberry, FL | October 2023 – May 2024</p>
+              <ul>
+                <li>
+                  Installed and configured fire alarm monitoring devices,
+                  ensuring compliance with local safety codes and regulations.
+                </li>
+                <li>
+                  Conducted thorough testing and inspections of the installed
+                  systems to verify operational efficiency and readiness in
+                  emergency situations.
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
     </>

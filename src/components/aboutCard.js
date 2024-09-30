@@ -48,7 +48,6 @@ const AboutCard = ({ handlePageChange, renderPage }) => {
 
   const handlePortBtn = () => {
     handlePageChange("portfolio");
-    renderPage();
   };
 
   return (

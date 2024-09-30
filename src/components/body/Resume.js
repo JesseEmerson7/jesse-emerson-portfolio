@@ -4,7 +4,7 @@ import "animate.css";
 export default function Resume() {
   const handleBtn = () => {
     window.open(
-      "https://docs.google.com/document/d/1uvmwYk3-Lrt3ALrUntl1Rkv0qisunyhG/edit?usp=sharing&ouid=105346610875604683419&rtpof=true&sd=true"
+      "https://drive.google.com/file/d/1o9uzJ73YKEf5pjd84ipN5KbPFqXy9vcR/view?usp=sharing"
     );
   };
   return (
@@ -14,7 +14,7 @@ export default function Resume() {
           onClick={handleBtn}
           className="btn btn-primary mt-5 rounded-b-none w-full md:w-2/3 mx-auto"
         >
-          Download via google docs
+          Download via Google Drive
         </button>
         <div className=" animate__animated animate__fadeIn bg-white text-black w-full md:w-2/3 md:mx-auto mb-5">
           <ResumeHtml />
