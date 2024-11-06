@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jesse-emerson-portfolio/static/css/main.dbadb88b.css",
-    "main.js": "/jesse-emerson-portfolio/static/js/main.5f1c9ff1.js",
+    "main.css": "/jesse-emerson-portfolio/static/css/main.c72e24bd.css",
+    "main.js": "/jesse-emerson-portfolio/static/js/main.b7be6c81.js",
     "static/media/forest.jpeg": "/jesse-emerson-portfolio/static/media/forest.88453830bc2e82381dc3.jpeg",
     "static/media/beekeeping.jpg": "/jesse-emerson-portfolio/static/media/beekeeping.857934bde2ee1cee016d.jpg",
     "static/media/gardening.jpg": "/jesse-emerson-portfolio/static/media/gardening.757d21f9d3de85583190.jpg",
@@ -20,14 +20,15 @@
     "static/media/header-pic4.jpg": "/jesse-emerson-portfolio/static/media/header-pic4.18091d716b0013c7fc36.jpg",
     "static/media/profile-7.jpg": "/jesse-emerson-portfolio/static/media/profile-7.d1848659034fdb55702b.jpg",
     "static/media/csslogo.png": "/jesse-emerson-portfolio/static/media/csslogo.7b2eb4849c1c79b2be14.png",
+    "static/media/IMG_2885.jpg": "/jesse-emerson-portfolio/static/media/IMG_2885.421cb0d3e32eb7d303b5.jpg",
     "static/media/password.png": "/jesse-emerson-portfolio/static/media/password.aa25cbf89939def02f6b.png",
     "static/media/boot.jfif": "/jesse-emerson-portfolio/static/media/boot.e99b9b2e9d5704d02243.jfif",
     "index.html": "/jesse-emerson-portfolio/index.html",
-    "main.dbadb88b.css.map": "/jesse-emerson-portfolio/static/css/main.dbadb88b.css.map",
-    "main.5f1c9ff1.js.map": "/jesse-emerson-portfolio/static/js/main.5f1c9ff1.js.map"
+    "main.c72e24bd.css.map": "/jesse-emerson-portfolio/static/css/main.c72e24bd.css.map",
+    "main.b7be6c81.js.map": "/jesse-emerson-portfolio/static/js/main.b7be6c81.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbadb88b.css",
-    "static/js/main.5f1c9ff1.js"
+    "static/css/main.c72e24bd.css",
+    "static/js/main.b7be6c81.js"
   ]
 }
