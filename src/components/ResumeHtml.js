@@ -1,186 +1,151 @@
 import "../assets/css/resume.css";
+// import { useEffect } from "react";
+import profile from ".././assets/images/IMG_2885.jpg";
 
 const ResumeHtml = () => {
+  const expertice = [
+    "Full-Stack Development",
+    "Proficient Troubleshooting",
+    "Mobile App Development",
+    "Data Intelligence",
+    "Web Application Development",
+  ];
+
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Node.js",
+    "Express",
+    "MySQL",
+    "NoSQL",
+    "React.js",
+    "React Native",
+    "jQuery",
+    "WordPress",
+    "Bootstrap",
+    "Tailwind",
+    "Python",
+    "PHP",
+  ];
+
   return (
     <>
-      <div className="mx-auto p-8">
-        <div className="resume-container">
-          <header>
-            <h1>Jesse Emerson</h1>
-            <p>
-              Orlando, FL | Phone: 407-687-2391 | Email:{" "}
-              <a href="mailto:jesseemerson7@gmail.com">
-                jesseemerson7@gmail.com
-              </a>
-            </p>
-            <p>
-              LinkedIn:{" "}
-              <a
-                href="https://linkedin.com/in/jesse-emerson57/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                linkedin.com/in/jesse-emerson57/
-              </a>{" "}
-              | GitHub:{" "}
-              <a
-                href="https://github.com/JesseEmerson7"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                github.com/JesseEmerson7
-              </a>{" "}
-              | Portfolio:{" "}
-              <a
-                href="https://jesseemerson7.github.io/jesse-emerson-portfolio/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                jesseemerson7.github.io/jesse-emerson-portfolio/
-              </a>
-            </p>
-          </header>
+      <div id="intro">
+        <img
+          id="resume-img"
+          src={profile}
+          alt="Jesse Emerson"
+          height={150}
+          style={{ borderRadius: "10px" }}
+        />
+        <div>
+          <h1>Jesse Emerson</h1>
+          <h2>Software Engineer</h2>
+          <p>
+            Dedicated Software Engineer skilled in creating responsive web and
+            mobile applications. Proficient in frontend and backend development,
+            with a focus on delivering seamless user experiences and robust
+            functionality. Committed to continuous learning and high-quality
+            solutions, and thrives in collaborative environments. Passionate
+            about solving complex technical challenges and staying updated on
+            emerging technologies.
+          </p>
+        </div>
+      </div>
 
-          <section>
-            <h2>Summary</h2>
-            <p>
-              Versatile Web Developer with a passion for technology and
-              continuous learning. Skilled in creating and maintaining dynamic
-              web applications, proficient in both frontend and backend
-              technologies. Excels in leveraging modern technologies to bring
-              innovative solutions and strong problem-solving skills to the
-              table. A proactive team player who thrives in collaborative
-              environments and consistently delivers high-quality results.
-            </p>
-          </section>
+      <section id="contact">
+        <ul>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <p>jesseemerson7@gmail.com</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Orlando, FL</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-mobile"></i>
+            <p>407-687-2391</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <p>github.com/jesseemerson7</p>
+          </li>
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>linkedin.com/in/jesseemerson7</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-briefcase"></i>
+            <p>github.com/jesseemerson7/jesse-emerson-portfolio</p>
+          </li>
+        </ul>
+      </section>
+      <div id="info-container">
+        <section id="exp">
+          <h2 class="section-title">AREAS OF EXPERTISE</h2>
+          <div id="expertise">
+            {expertice.map((value) => (
+              <p>{value}</p>
+            ))}
+          </div>
+        </section>
 
-          <section>
-            <h2>Technical Skills</h2>
-            <p>
-              JavaScript ES6+, CSS3, HTML5, WordPress, PHP, SQL, NoSQL, GitHub,
-              MongoDB, Mongoose, Sequelize, GraphQL, Express, React, Node,
-              Handlebars, jQuery, Bootstrap, Tailwind, Python
-            </p>
-          </section>
-
-          <section>
-            <h2>Education</h2>
-            <ul>
-              <li>
-                Bachelor of Science in Information Systems Technology (Expected
-                2026) - Seminole State College, Oviedo, FL
-              </li>
-              <li>
-                Associate in Arts (2024) - Seminole State College, Oviedo, FL
-              </li>
-              <li>
-                Full Stack Web Development Certificate (2023) - University of
-                Central Florida, Orlando, FL
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Projects</h2>
-            <div className="project">
-              <h3>BeeAware</h3>
-              <p>
-                Full stack educational and blog application focusing on
-                Florida’s local pollinators.
-                <br />
-                GitHub:{" "}
-                <a
-                  href="https://github.com/JesseEmerson7/BeeAware"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/JesseEmerson7/BeeAware
-                </a>
-                <br />
-                Live Application:{" "}
-                <a
-                  href="https://radiant-ocean-19328.herokuapp.com/Project"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  radiant-ocean-19328.herokuapp.com/Project
-                </a>
-              </p>
-              <p>
-                Role: Lead Developer, responsible for both front-end and
-                back-end development.
-                <br />
-                Technologies Used: JavaScript, Tailwind CSS, MongoDB, Express,
-                React, Node.js, Mongoose, Apollo, GraphQL.
-              </p>
-            </div>
-
-            <div className="project">
-              <h3>Simplicity Login</h3>
-              <p>
-                Login form and website landing page that changes appearance
-                based on the time of day.
-                <br />
-                GitHub:{" "}
-                <a
-                  href="https://github.com/JesseEmerson7/simplicity-login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  github.com/JesseEmerson7/simplicity-login
-                </a>
-                <br />
-                Live Application:{" "}
-                <a
-                  href="https://jesseemerson7.github.io/simplicity-login/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  jesseemerson7.github.io/simplicity-login/
-                </a>
-              </p>
-              <p>Technologies Used: React, Tailwind</p>
-            </div>
-          </section>
-
-          <section>
-            <h2>Experience</h2>
-            <div className="experience">
-              <h3>Data Intelligence Intern</h3>
-              <p>Bayer - Orlando, FL (Remote) | May 2024 – August 2024</p>
+        <section id="work">
+          <h2 class="section-title">WORK EXPERIENCE</h2>
+          <div class="job-gap">
+            <div class="job">
+              <h3>Software Engineer</h3>
+              <p>Figarelli House Corp</p>
+              <div>
+                <p>12/23 - Present</p>
+                <p>Orlando, FL</p>
+              </div>
               <ul>
                 <li>
-                  Developed and maintained dashboards and reports to visualize
-                  key performance indicators and business metrics.
+                  Developed responsive and user-friendly mobile and web-based
+                  financial tracking applications, enhancing user engagement
+                  through intuitive interfaces and seamless navigation.
                 </li>
                 <li>
-                  Collaborated with cross-functional teams to identify data
-                  needs and provide actionable insights.
-                </li>
-                <li>
-                  Utilized SQL, Python, and various data visualization tools to
-                  analyze and present data.
+                  Enhanced mobile applications by troubleshooting, testing, and
+                  fixing user reported errors.
                 </li>
               </ul>
             </div>
-
-            <div className="experience">
-              <h3>Web Developer</h3>
-              <p>
-                Figarelli House Corp - Orlando, FL | December 2023 – August 2024
-              </p>
+            <div class="job">
+              <h3>Software Engineering Intern</h3>
+              <p>Bayer Crop Science</p>
+              <div>
+                <p>5/24 - 8/24</p>
+                <p>Orlando, FL (Remote)</p>
+              </div>
               <ul>
                 <li>
-                  Designed responsive and user-friendly frontend interfaces
-                  using HTML, CSS, and JavaScript, ensuring compatibility across
-                  browsers and devices.
+                  Developed full-stack web based dashboards and reports using
+                  Python, HTML, CSS, JavaScript, and React to visualize key
+                  performance indicators and business metrics.
+                </li>
+                <li>
+                  Collaborated with team members to implement and enhance
+                  additional features in a Next.js project. Provided support in
+                  refining user interface components, optimizing code for
+                  performance, and ensuring seamless integration of new
+                  functionalities within the existing architecture.
                 </li>
               </ul>
             </div>
-
-            <div className="experience">
+            <div class="job">
               <h3>Fire Alarm Technician</h3>
-              <p>DynaFire - Castleberry, FL | October 2023 – May 2024</p>
+              <p>DynaFire</p>
+              <div>
+                <p>10/23 - 5/24</p>
+                <p>Casselberry, FL</p>
+              </div>
+
               <ul>
                 <li>
                   Installed and configured fire alarm monitoring devices,
@@ -193,9 +158,67 @@ const ResumeHtml = () => {
                 </li>
               </ul>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title">TECHNICAL SKILLS</h2>
+          <div id="tech">
+            {skills.map((skill) => (
+              <p>{skill}</p>
+            ))}
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2 class="section-title">PROJECTS</h2>
+          <div>
+            <h3>BeeAware</h3>
+            <p>
+              MERN Stack Educational and Blog Application: Led a remote team in
+              developing a platform focused on Florida's local pollinators,
+              utilizing GraphQL and Mongoose on the backend, and React on the
+              frontend. Implemented features such as user authentication and
+              content management to enhance user engagement.
+            </p>
+            <p>github.com/JesseEmerson7/BeeAware</p>
+          </div>
+          <div>
+            <h3>Simplicity Login</h3>
+            <p>
+              Dynamic Front-End React Login Page: Developed a responsive login
+              form and landing page that changes appearance based on the time of
+              day. Utilized React for state management and implemented CSS
+              transitions for enhanced user experience
+            </p>
+            <p>github.com/JesseEmerson7/simplicity-login</p>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-title">EDUCATION</h2>
+          <div class="job-gap">
+            <div>
+              <h3>Bachelor of Science in Information Systems Technology</h3>
+              <p>Seminole State College</p>
+              <p>2024 - 2026</p>
+            </div>
+            <div>
+              <h3>Associate in Arts</h3>
+              <p>Seminole State College</p>
+              <p>2022 - 2024</p>
+            </div>
+            <div>
+              <h3>Full Stack Coding Bootcamp</h3>
+              <p>University of Central Florida</p>
+              <p>2023</p>
+            </div>
+          </div>
+        </section>
       </div>
+      <script
+        src="https://kit.fontawesome.com/0badf1a3ce.js"
+        crossorigin="anonymous"
+      ></script>
     </>
   );
 };

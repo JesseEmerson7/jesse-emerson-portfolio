@@ -1,10 +1,11 @@
 import ResumeHtml from "../ResumeHtml";
 import "animate.css";
+import "../../assets/css/resume.css";
 
 export default function Resume() {
   const handleBtn = () => {
     window.open(
-      "https://drive.google.com/file/d/1o9uzJ73YKEf5pjd84ipN5KbPFqXy9vcR/view?usp=sharing"
+      "https://drive.google.com/file/d/1GAw40mtXrdNES8ABhO69yEnbPbGtYeZs/view?usp=sharing"
     );
   };
   return (
