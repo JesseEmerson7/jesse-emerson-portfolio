@@ -117,7 +117,7 @@ const ResumeHtml = () => {
               </ul>
             </div>
             <div class="job">
-              <h3>Software Engineering Intern</h3>
+              <h3>Data Intelligence Intern</h3>
               <p>Bayer Crop Science</p>
               <div>
                 <p>5/24 - 8/24</p>
